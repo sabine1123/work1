@@ -1,0 +1,38 @@
+extends ./layout/head.pug
+append page_head
+  link(rel="stylesheet" href="./css/sports.css")
+
+
+block body
+  body
+    .wrapper
+      include ./layout/full_header.pug
+
+      .main
+        .left
+          a(href="javascript:;")
+            img(src="./imgs/sport/BBIN_img_left.jpg", alt="")
+          
+        .right
+            a(href="javascript:;")
+              img(src="./imgs/sport/iBCbet_img_right.jpg", alt="")
+        .clearfix
+
+        .title
+          img(src="./imgs/sport/sport_title.png", alt="")
+
+      include ./layout/footer.pug
+
+      include ./layout/fix_service.pug
+
+
+    include ./layout/common_scripts.pug
+    script.
+      $(document).ready(function(){
+        baseCtrl();
+
+        //add menu active
+        $('#tMenu>li:nth-child(4)').addClass('active');
+
+      });//end of document ready
+

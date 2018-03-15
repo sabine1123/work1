@@ -1,0 +1,223 @@
+.btn {
+  background-image: none;
+  background-repeat: no-repeat;
+  border: none;
+  text-shadow: none;
+  border-radius: 2px;
+  padding: 0; }
+
+.btn_fill_green {
+  background-color: #168849;
+  color: #fff; }
+  .btn_fill_green:hover, .btn_fill_green:focus, .btn_fill_green:active {
+    color: #fff; }
+
+.btn_fill_gray {
+  background-color: #676f6a;
+  color: #fff; }
+  .btn_fill_gray:hover, .btn_fill_gray:focus, .btn_fill_gray:active {
+    color: #fff; }
+
+.btn_fill_light_gray {
+  background-color: #b2ada7;
+  color: #fff;
+  border-radius: 4px; }
+  .btn_fill_light_gray:hover, .btn_fill_light_gray:focus, .btn_fill_light_gray:active {
+    color: #fff; }
+
+.btn_fill_orange {
+  background-color: #e69016;
+  color: #fff;
+  border-radius: 4px; }
+  .btn_fill_orange:hover, .btn_fill_orange:focus, .btn_fill_orange:active {
+    color: #fff; }
+
+.btn_empty_green {
+  border: 1px solid #168849;
+  color: #168849;
+  background-color: #fff; }
+  .btn_empty_green:hover, .btn_empty_green:focus, .btn_empty_green:active {
+    color: #168849; }
+
+.btn_empty_gray {
+  border: 1px solid #c2c7c3;
+  color: #c8d0cf;
+  background-color: #fff; }
+  .btn_empty_gray:hover, .btn_empty_gray:focus, .btn_empty_gray:active {
+    color: #c8d0cf; }
+
+.btn_small {
+  width: 71px;
+  height: 31px;
+  line-height: 31px; }
+
+.btn_medium {
+  width: 102px;
+  height: 41px;
+  line-height: 41px; }
+
+@-webkit-keyframes updown {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+  100% {
+    -webkit-transform: translateY(5px);
+    transform: translateY(5px); } }
+
+@keyframes updown {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+  100% {
+    -webkit-transform: translateY(5px);
+    transform: translateY(5px); } }
+
+.main .dec_wrap, .main .content {
+  float: left; }
+
+.main .dec_wrap {
+  width: 816px;
+  height: 1174px;
+  background: url(../imgs/member/member_bg.png) #eee no-repeat;
+  position: relative; }
+  @media screen and (max-width: 1366px) {
+    .main .dec_wrap {
+      width: 516px;
+      background-position: -300px 0; } }
+
+.main .content {
+  padding-top: 300px;
+  font-size: 1rem;
+  color: #4d5150;
+  letter-spacing: 1px; }
+
+.main .box1 {
+  display: none; }
+  .main .box1.dec_wrap .decs {
+    position: absolute; }
+  .main .box1.dec_wrap .b1dec1 {
+    top: 202px;
+    left: 434px; }
+  .main .box1.dec_wrap .b1dec2 {
+    top: 580px;
+    left: 410px; }
+  .main .box1.dec_wrap .b1dec3 {
+    top: 710px;
+    left: 383px; }
+
+.main .content .regist li .title {
+  width: 70px;
+  text-align: right;
+  display: inline-block;
+  margin-right: 18px; }
+
+.main .content .regist li p {
+  color: #fe5b2f;
+  font-size: 0.875rem;
+  height: 36px;
+  line-height: 36px;
+  padding-left: 92px; }
+
+.main .content .regist li .error {
+  visibility: hidden; }
+  .main .content .regist li .error:before {
+    content: url(../imgs/member/icons/member_alert_icon.png);
+    display: inline-block;
+    margin-right: 7px;
+    padding-top: 2px; }
+
+.main .content .regist li input {
+  width: 430px;
+  height: 46px;
+  border: 1px solid #d8e1da;
+  border-radius: 2px;
+  padding-left: 50px;
+  display: inline-block; }
+  .main .content .regist li input.bg1 {
+    background: url(../imgs/member/icons/member_account_icon.png) 12px 11px no-repeat; }
+  .main .content .regist li input.bg2 {
+    background: url(../imgs/member/icons/member_password_icon.png) 12px 11px no-repeat; }
+  .main .content .regist li input.bg3 {
+    background: url(../imgs/member/icons/member_pwdconfirm_icon.png) 12px 9px no-repeat; }
+  .main .content .regist li input.bg4 {
+    background: url(../imgs/member/icons/member_mobile_icon.png) 12px 9px no-repeat; }
+  .main .content .regist li input.bg5 {
+    background: url(../imgs/member/icons/member_GetCode_icon.png) 12px 9px no-repeat; }
+
+.main .content .regist li.get_code input {
+  width: 312px;
+  border-radius: 2px 0 0 2px; }
+
+.main .content .regist li.get_code .code_pic {
+  display: inline-block;
+  vertical-align: top; }
+
+.main .content .regist li.check {
+  font-size: 0.875rem; }
+  .main .content .regist li.check label {
+    cursor: pointer;
+    font-weight: 400; }
+    .main .content .regist li.check label span {
+      display: inline-block;
+      vertical-align: middle; }
+    .main .content .regist li.check label input[type="radio"] {
+      width: 0;
+      height: 0;
+      opacity: 0; }
+      .main .content .regist li.check label input[type="radio"]:checked + .indicator {
+        background-image: url(../imgs/member/icons/member_checkbox_icon_s.png); }
+    .main .content .regist li.check label .indicator {
+      width: 16px;
+      height: 16px;
+      background-size: cover;
+      background-image: url(../imgs/member/icons/member_checkbox_icon_n.png);
+      margin-right: 8px; }
+
+.main .content .regist li:nth-of-type(6), .main .content .regist li:nth-of-type(7) {
+  padding-left: 92px;
+  font-size: 0.875rem; }
+
+.main .content .regist li .regist_btn {
+  width: 430px;
+  height: 65px;
+  line-height: 65px;
+  font-size: 1.25rem;
+  border-radius: 4px;
+  background-color: #26a97a;
+  color: #fff;
+  margin-top: 39px; }
+  .main .content .regist li .regist_btn:hover, .main .content .regist li .regist_btn:focus, .main .content .regist li .regist_btn:active {
+    color: #fff; }
+
+.main .box2 {
+  display: block; }
+  .main .box2.dec_wrap .decs {
+    position: absolute;
+    left: 434px; }
+  .main .box2.dec_wrap .b2dec1 {
+    top: 393px; }
+  .main .box2.dec_wrap .b2dec2 {
+    top: 535px; }
+  .main .box2.dec_wrap .b2dec3 {
+    top: 677px; }
+  .main .box2.content {
+    width: 744px;
+    text-align: center;
+    background-color: rgba(255, 204, 204, 0.3); }
+    .main .box2.content .top {
+      margin-bottom: 21px; }
+    .main .box2.content .middle a {
+      display: inline-block; }
+      .main .box2.content .middle a:nth-of-type(2) {
+        margin: 0 43px; }
+    .main .box2.content .bottom {
+      margin-top: 79px; }
+      .main .box2.content .bottom p {
+        font-size: 0.875rem;
+        color: #4c4c4c; }
+        .main .box2.content .bottom p:nth-of-type(2) {
+          letter-spacing: 21.4px;
+          margin: 118px auto 0 auto; }
+
+.g_f_color {
+  color: #5bc023; }

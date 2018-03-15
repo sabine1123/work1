@@ -1,0 +1,313 @@
+@import 'layout/_includes.sass'
+
+.c_tab
+	+tab(#de7708,#fff)
+.main
+	.marquee
+		height: 58px
+		background: linear-gradient(left,#1ca459 50%,#16884a 50%)
+		.marquee_content
+			background:  url(../imgs/index/index_notice_bg.jpg) no-repeat
+			background-size: contain
+			width: 1200px
+			height: 100%
+			margin: 0 auto
+			position: relative
+			.marquee_wrap
+				width: 980px
+				overflow: hidden
+				position: absolute
+				left: 130px
+				top: 22px
+				font-size: $font_size_base
+				color: #fff
+				cursor: pointer
+				span
+					margin-left: 15px
+
+	.content
+		background:  url(../imgs/index/index_bg.jpg) no-repeat		
+		background-color: #f1f6f2
+		background-size: contain
+		padding: 13px 0 53px 
+		.box_group
+			&:nth-of-type(1)
+				margin-bottom: 10px	
+			a
+				display: block
+				// outline: 0
+		.slot, .live
+			display: inline-block
+			vertical-align: top
+		.slot
+			width: 895px
+			background-color: #fff
+			padding: 25px 20px 20px
+			.money
+				background:  url(../imgs/index/index_award_bg.png) no-repeat
+				height: 206px
+				margin-top: -30px
+				position: relative
+				.num
+					font-size: 4.25rem
+					color: #31b153
+					position: absolute
+					left: 28px
+					bottom: 23px
+					span
+						// background-color: rgba(#aaa, 0.5)
+						// outline: 1px solid #fff
+						width: 50.5px
+						display: inline-block
+						margin-right: 7px
+						text-align: center
+
+			.pf
+				color: #4b504c
+				font-size: $font_size_large
+				letter-spacing: 1.3px
+				background-color: #ebf5ed
+				padding-top: 13px
+				padding-left: 10px
+				.more
+					color: #747b78
+					font-size: $font_size_base
+
+			.pf_title, .pf_content
+				display: inline-block
+				vertical-align: top
+			.pf_title
+				padding-top: 20px
+				padding-right: 2px
+			.pf_content
+				min-height: (177px+22px)
+				padding-top: 22px
+				ul
+					li
+						display: inline-block
+						margin-right: 5.5px
+						&:last-of-type(1)
+							margin-right: 0
+						.game_title
+							color: #434844
+							text-align: center
+							font-size: $font_size_base
+							letter-spacing: 1.1px
+							padding: 13px 0
+							background-color: #ebf5ed 
+
+		.live
+			width: 295px
+			margin-left: 6px
+			a
+				&:nth-of-type(1), &:nth-of-type(2)
+					margin-bottom: 10px		
+		.sport, .fish, .lotto
+			display: inline-block
+			vertical-align: top
+		.sport
+			width: 595px
+			a
+				&:nth-of-type(1)
+					margin-bottom: 10px
+				
+		.fish, .lotto
+			width: 290px
+			margin-left: 6px
+
+	.advantage
+		img
+			width: 100%
+
+
+
+
+// .border_right
+// 	border-right: 1px dotted #e8f0ed
+// .border_bottom
+// 	border-bottom: 4px solid #eff5f3
+
+// .index_banner
+// 	.swiper-slide
+// 		min-height: 100px
+// 		img
+// 			width: 100%
+// 	.swiper-pagination
+// 		width: auto
+// 		right: 14px
+// 		bottom: 9px
+// 		left: auto
+
+// 		.swiper-pagination-bullet
+// 			width: 10px
+// 			height: 10px
+// 			background-color: #fff
+// 			opacity: 1
+
+// 		.swiper-pagination-bullet-active
+// 			background-color: #ffde00
+
+// .title
+// 	color: $font_light_dark
+
+// .index_sub_link
+// 	// padding: 0 20px
+// 	.box
+// 		text-align: center
+// 		// padding-top: 25px
+// 		padding-top: 13px
+// 	.title
+// 		font-size: $font_size_base
+// 		padding-top: 10px
+
+// .marquee_container
+// 	background-color: #fff
+// 	border-top: 4px solid #eff5f3
+// 	padding-top: 9px
+// 	padding-bottom: 9px
+// 	font-size: $font_size_base
+// 	.marquee_icon, .marquee_content
+// 		display: inline-block
+// 		vertical-align: middle
+// 	.marquee_icon
+// 		width: 16px
+// 		height: 16px
+// 		img
+// 			width: 16px
+// 	.marquee_content
+// 		margin-left: percentage(12px/320px)
+// 		width: percentage(279px/320px)
+// 		color: #626e6a
+// 		overflow: hidden
+
+// 		.marquee_wrap
+// 			span
+// 				margin-right: 10px
+
+
+// .slot_container
+// 	padding-top: 13px
+
+// 	.title
+// 		// font-size: $font_size_large
+// 		font-size: 1rem
+// 		text-align: center
+// 		position: relative
+// 		font-weight: bold
+// 		color: $font_light_dark
+// 	p
+// 		font-size: $font_size_base
+// 		color: #676f6c
+
+// 	.more
+// 		font-size: $font_size_base
+// 		color: #9ba7a2
+// 		position: absolute
+// 		right: percentage(24px/640px)
+// 		top: 0
+
+// 	.meter
+// 		background: url(../img/index/meter.jpg)  no-repeat center
+// 		background-color: #6acdf7
+// 		background-size: cover
+// 		height: 73px
+// 		position: relative
+// 		.title
+// 			font-size: $font_size_large
+// 			color: #fde8d2
+// 			position: absolute
+// 			left: percentage(68px/640px)
+// 			top: 18%
+// 		.money
+// 			font-size: 1.25rem
+// 			color: #fff
+// 			position: absolute
+// 			left: percentage(81px/640px)
+// 			top: 42%
+	
+// .slot_img
+// 	padding-top: 26px
+// 	padding-bottom: 26px
+// 	// border-bottom: 10px solid #eff5f3
+// 	.swiper-slide
+// 		width: percentage(165px/640px)
+// 		img
+// 			width: 100%
+// 	// .swiper-wrapper
+// 	// 	// padding-left: 20px
+
+// .live_container
+// 	img
+// 		width: 100%
+
+// .live_img
+// 	padding-top: 20px
+// 	padding-bottom: 20px
+// 	// border-bottom: 10px solid #eff5f3
+
+// .sport_img
+// 	background: url(../img/index/sport_bg.png)  no-repeat center bottom
+
+
+
+// .list_block
+// 	li
+// 		display: inline-block	
+// 		width: percentage(75px/242px)
+// 		&:nth-child(2)
+// 			text-align: center
+// 		&:nth-child(3)
+// 			text-align: right			
+// 	.list_title
+// 		width: percentage(600px/640px)
+// 		background-image: linear-gradient(to right, #f9eccd, #fff8e6 48%, #f9eccd)
+// 		border-radius: 3px
+// 		margin: auto
+// 		padding: 10px percentage(20px/320px)
+// 		li
+// 			font-size: $font_size_large
+// 			color: #8d5940
+			
+// .list_box
+// 	overflow: hidden
+// 	.slick-slide 
+// 		// border-bottom: 1px dashed #d8dfdc
+// 	.lists
+// 		width: percentage(600px/640px)
+// 		font-size: $font_size_base
+// 		color: #616764
+// 		padding-left: percentage(20px/320px)
+// 		padding-right: percentage(20px/320px)
+// 		padding: 8px percentage(20px/320px)
+// 		margin: auto
+// 		border-bottom: 1px dashed #d8dfdc
+
+// .download_container
+// 	position: relative
+// 	&:before
+// 		content: ''
+// 		display: block
+// 		width: 100%
+// 		height: 4px
+// 		position: absolute
+// 		top: -4px
+// 		background-color: #eff5f3
+// 		left: 0
+
+// .download_img
+// 	// padding-top: percentage(28px/320px)
+// 	// padding-bottom: percentage(28px/320px)
+// 	padding-top: 22px
+// 	padding-bottom: 28px
+// 	.swiper-slide
+// 		width: percentage(165px/640px)
+// 		img
+// 			width: 100%
+// 	.swiper-wrapper
+// 		padding-left: 20px
+
+
+
+// .modal-backdrop
+// 	top: 55px
+// 	// height: 0

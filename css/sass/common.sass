@@ -1,0 +1,402 @@
+@import 'layout/_includes.sass'
+
+
+html 
+	font-size: 100%
+
+body 
+	font-family: $font
+	line-height: 1
+	// color: #7c8180
+
+
+a
+	color: inherit
+	&:hover, &:active, &:focus
+		color: inherit
+		text-decoration: none
+		outline: none
+ul, h1, h2, h3, h4, h5, h6, p
+	padding: 0
+	margin: 0
+
+ul li
+	list-style-type: none
+
+.clearfix:after
+  visibility: hidden
+  display: block
+  font-size: 0
+  content: " "
+  clear: both
+  height: 0
+
+.clearfix 
+	display: inline-block
+
+/* start commented backslash hack \*/
+* html .clearfix 
+	height: 1%
+.clearfix
+	display: block
+/* close commented backslash hack */
+
+
+.box
+	max-width: 1200px
+	margin-left: auto
+	margin-right: auto
+	// outline: 1px solid #f00
+
+input
+	&:focus, &:active, &:hover
+		outline: none
+// .c_tab
+// 	.nav-tabs
+// 		border-bottom: 1px solid transparent
+// 	.nav-tabs
+// 		li.active
+// 			color: #de7708
+// 	.nav>li>a
+// 		width: 100%
+// 		padding: 10px 20px
+// 		border: none
+// 	.nav>li>a:focus, .nav>li>a:hover
+// 		background-color: #fff
+// 	.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover
+// 		color: inherit
+// 		border: none
+	
+// 	.nav
+// 		li.more
+// 			>a
+// 				&:hover
+// 				background-color: transparent
+	
+	
+
+
+
+.input_middle
+	width: 140px
+	height: 30px
+	border-radius: 2px
+
+.input_fill_dark
+	background-color: #2e3531
+	border: none
+
+.form
+	display: inline-block
+
+.font_yellow
+	color: $font_yellow
+.font_sub
+	font-size: $font_size_s
+
+.wrapper
+	position: relative
+
+header.full_header
+	position: absolute
+	width: 100%
+	letter-spacing: 1px
+	z-index: 50
+	.mem_bar
+		background-color: #454c48
+		height: 42px
+		line-height: 42px
+		color: $font_light
+		font-size: $font_size_base
+		.left
+			font-size: $font_size_s
+
+		.right
+			// letter-spacing: 1px
+			.off_login
+				// display: none
+				.form
+					&:nth-of-type(1)
+						margin-right: 17px
+					&:nth-of-type(2)
+						margin-right: 10px
+				.title
+					display: inline-block
+					margin-right: 4px
+
+				.forget
+					margin-left: 16px
+					margin-right: 22px
+					font-size: $font_size_s
+
+			.on_login
+				display: none
+				.greetings, .balance, .switch, .member
+					display: inline-block
+
+				.greetings
+					margin-right: 45px
+				
+				.balance
+					.num, .reload, 
+						display: inline-block
+					.num
+						color: #fff
+						font-size: 0.9375rem
+					.reload
+						cursor: pointer
+
+				.switch
+					position: relative
+					width: 36px
+					height: 17px
+					margin-left: 10px
+					margin-right: 14px
+					top: 5px
+					border-radius: 20px
+					background:  #282d2a
+					cursor: pointer
+				
+					.toggle
+						position: absolute
+						top: 1.5px
+						left: 1px
+						width: 13px
+						height: 13px
+						border-radius: 4px
+						background: #808d86
+						border-radius: 50%
+						transition: all 0.15s ease-in-out
+						
+
+					&.on 
+						.toggle 
+							left: 1.5px
+							background: $btn_green
+					&.off 
+						.toggle
+							left: 21.5px
+
+				.member
+					>ul
+						li
+							display: inline-block
+
+
+							a
+								padding-left: 17px
+								padding-right: 17px
+								border-left: 1px solid rgba($font_light,.5)
+
+							&:nth-last-of-type(1)
+								a
+									border: none
+
+	nav
+		background-color: rgba(#000,0.6)
+		height: 112px
+		// line-height: 112px
+		color: $font_light
+		z-index: 1600
+		// .left, .right
+			// display: inline-block
+		.left
+			line-height: 112px
+			margin-right: 200px
+			a
+				display: block
+		.right
+			>ul.menu
+				height: 100%
+				li
+					display: inline-block
+					max-width: 90px
+					text-align: center
+					padding: 22px 0
+					margin-top: -1px
+					min-width: 75px
+					a
+						// height: 100%
+						display: block
+						.title
+							display: block
+							margin-top: 16px
+
+					&.active
+						background-color: rgba(#000,0.3)
+// end of header
+
+.main
+
+	// margin-top: -112px
+
+	// position: absolute
+	padding-top: 42px
+	z-index: 1
+
+	.full_banner
+		img
+			width: 100%
+
+		.swiper-pagination
+			// width: auto
+			// right: 14px
+			// bottom: 9px
+			// left: auto
+
+			.swiper-pagination-bullet
+				width: 12px
+				height: 12px
+				background-color: transparent
+				opacity: 1
+				border: 1px solid rgba(#000,0.7)
+				border-radius: 50%
+				margin: 0 8px
+
+			.swiper-pagination-bullet-active
+				background-color: rgba(#49473f,0.7)
+
+
+footer
+	background-color: #d4dcd6
+	padding-top: 35px
+	padding-bottom: 60px
+	
+	.left, .middle, .right
+		min-height: 367px
+
+	.left>.sub_wrap>.title, .middle>.title, .right>.title		
+			margin-bottom: 28px
+
+	.left
+		padding-left: 26px
+		.sub_wrap
+			width: 286px
+			.content
+				margin-bottom: 34px
+
+				.text
+					h4
+						font-size: $font_size_Llarge
+						line-height: 1.39
+						letter-spacing: 1.4px		
+						color: #525752
+				.time
+					font-size: 2.375rem	
+					letter-spacing: 3px
+					.num
+						color: #737873
+					.unit
+						color: #bec3be
+
+				.sub_title
+					font-size: $font_size_s
+					letter-spacing: 1px
+					color: #737873
+					display: block
+					// line-height: 1.5
+			.sec, .min
+				.con
+					width: 100%
+					height: 13px
+					border: 1px solid #8a8e88
+					margin-top: 10px
+					.bar
+						height: 100%
+						background-color: $font_green
+			.sec
+				.con						
+					.bar
+						width: percentage(113px/286px)
+			.min
+				.con						
+					.bar
+						width: percentage(171px/286px)
+
+			.place
+				img
+					margin-top: 3px
+					margin-bottom: 5px
+				.time
+					padding-top: 43px
+
+
+
+	.middle
+		border-right: 1px solid #b3c0b6
+		border-left: 1px solid #b3c0b6
+		text-align: center
+
+		.partners
+			display: inline-block
+			vertical-align: top
+
+			li
+				margin-bottom: 15px
+
+	.right
+		padding-left: 90px
+		color: #2e312e
+
+		.footer_menu
+			.content
+				letter-spacing: 1.1px	
+				line-height: 1.5		
+				span
+					display: block
+					font-size: $font_size_base
+				&:nth-of-type(1)
+					margin-bottom: 45px
+				&:nth-of-type(2)
+					margin-bottom: 35px
+					width: 274px
+				&:nth-of-type(3)
+					margin-bottom: 30px
+				&:nth-of-type(4)
+					span
+						font-size: $font_size_s
+			ul
+				&:nth-of-type(1)
+					margin-bottom: 10px
+
+				li
+					display: inline-block
+					margin-right: 25px
+					font-size: $font_size_base
+					&:nth-last-of-type(1)
+						margin-right: 0
+
+					color: #2e312e
+					img
+						width: 16px
+						margin-right: 5px
+
+
+.fix_service
+	position: fixed
+	top: 50%
+	transform: translateY(-230px)
+	right: 10px
+	z-index: 500
+	width: 84px
+	background-color: #fff
+	color: #747975
+	letter-spacing: 1.2px
+	font-size: $font_size_s
+
+	ul
+		li
+			text-align: center
+			padding: 14px 0
+			a
+				width: 100%
+			span
+				display: block
+				margin-top: 5px
+			&:nth-of-type(1)
+				padding-top: 28px
+			&:nth-of-type(5)
+				padding-bottom: 28px
+			&.top
+				background-color: #c8ead7
+				cursor: pointer

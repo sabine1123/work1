@@ -1,0 +1,272 @@
+extends ./layout/head.pug
+append page_head
+
+  link(rel="stylesheet" href="./css/vip.css")
+
+
+block body
+  body
+    .wrapper
+      include ./layout/full_header.pug
+
+
+      .main
+        .wrap
+          img.dec(src="imgs/VIP/vip_sideber_img.png" alt="")
+
+          .content
+            .vip_tab(role="tabpanel")
+              ul(class="nav nav-tabs" role="tablist")
+                li.tab_rules(role="presentation" class="active")
+                  a(href="#rules" aria-controls="rules" role="tab" data-toggle="tab") 
+
+                li.tab_grades(role="presentation")
+                  a(href="#grades" aria-controls="grades" role="tab" data-toggle="tab") 
+
+            .vip_content(class="tab-content")
+              div(role="tabpanel" class="tab-pane active" id="rules") 
+                table.vip_table.rules
+                  thead
+                    tr
+                      td 会员等级
+                      td 申请VIP条件
+                      td VIP保级条件
+                  tbody
+                    tr
+                      td 忠实会员
+                      td 无
+                      td
+                    tr
+                      td 白银VIP
+                      td
+                        ul
+                          li 
+                            span.c A：
+                            span 累积投注额
+                            span.s ≥20万
+                          li 
+                            span.c B：
+                            span 月存款
+                            span.s ≥5万
+                          li 
+                            span.c C：
+                            span 单笔存款
+                            span.s ≥3000
+                      td
+                    tr
+                      td 黄金VIP
+                      td
+                        ul
+                          li 
+                            span.c A：
+                            span 累积投注额
+                            span.s ≥50万
+                          li 
+                            span.c B：
+                            span 月存款
+                            span.s ≥10万
+                          li 
+                            span.c C：
+                            span 单笔存款
+                            span.s ≥8000
+                      td
+                    tr
+                      td 铂金VIP
+                      td
+                        ul
+                          li 
+                            span.c A：
+                            span 累积投注额
+                            span.s ≥100万
+                          li 
+                            span.c B：
+                            span 月存款
+                            span.s ≥20万
+                          li 
+                            span.c C：
+                            span 单笔存款
+                            span.s ≥15000
+                      td 每月保底存款2万
+                    tr
+                      td 钻石VIP
+                      td
+                        ul
+                          li 
+                            span.c A：
+                            span 累积投注额
+                            span.s ≥300万
+                          li 
+                            span.c B：
+                            span 月存款
+                            span.s ≥50万
+                          li 
+                            span.c C：
+                            span 单笔存款
+                            span.s ≥30000
+                      td
+                    tr
+                      td 至尊VIP
+                      td
+                        ul
+                          li 
+                            span.c A：
+                            span 累积投注额
+                            span.s ≥1000万
+                          li 
+                            span.c B：
+                            span 月存款
+                            span.s ≥100万
+                          li 
+                            span.c C：
+                            span 单笔存款
+                            span.s ≥8000
+                      td
+
+                .tips
+                  p.title 温馨提示：
+                  ul
+                    li 1. 晋升条件须满足A、B、C三项.中的任意两项，有效投注周期为30天(申请优惠产生的所有投注额不计算在内，除返水及救援金外)；
+                      br/ (例如：会员于11月1日注册并首存，11月20日总投注额达到20万或存款累计超过5万元，或在这期间有过单笔3000RMB以上的存款记录，则该会员在11月21日即可申请白银VIP，审核通过后会在12月1日荣升为白银VIP玩家)
+                    li 2. 晋升为VIP后第二个月，如未满足投注额要求系统自动降级；
+                      br/ (例如：会员在11月21日晋升VIP，则会在11月30日进行审核，投注额不够，将自动降级.)
+                    li 3.VIP会员升级/降级制度，须逐级申请，降级同样，不可跨级升级VIP亦不会跨级降级 VIP。
+                    li 4.达到晋级要求后，需连续在线客服进行VIP等级调整。
+
+              div(role="tabpanel" class="tab-pane" id="grades")
+                table.vip_table.grades
+                  thead
+
+                    tr
+                      td(rowspan="2") 会员等级
+                      td(rowspan="2") 乐币
+                        br/ 倍数
+                      td(rowspan="2") 乐币
+                        br/ 换现金
+                      td(rowspan="2") 晋级
+                        br/ 礼金
+                      td(rowspan="2") 每月
+                        br/ 免费筹码
+
+                      td(colspan="3") 存送优惠(每周1次，仅限老虎机)
+                      td(colspan="4") 返水
+
+                    tr
+                      td 存送比例
+                      td 最高上限
+                      td 流水要求
+                      td 真人
+                      td 电游
+                      td 体育
+                      td 彩票
+                  tbody
+                    tr
+                      td 忠实会员
+                      td 1
+                      td(rowspan="6") 10乐币
+                        br/ = 
+                        br/ 1元
+                      td -
+                      td -
+                      td -
+                      td -
+                      td -
+                      td 0.6%
+                      td 0.6%
+                      td 0.4%
+                      td(rowspan="6") 0.4%
+                    tr
+                      td 白银VIP
+                      td 1.1
+                      td 88
+                      td 188
+                      td 60%
+                      td 388
+                      td 15
+                      td 0.8%
+                      td 0.8%
+                      td 0.6%
+                    tr
+                      td 黄金VIP
+                      td 1.3
+                      td 168
+                      td 288
+                      td 80%
+                      td 588
+                      td 15
+                      td 0.9%
+                      td 1.0%
+                      td 0.7%
+                    tr
+                      td 铂金VIP
+                      td 1.5
+                      td 288
+                      td 388
+                      td 100%
+                      td 888
+                      td 18
+                      td 1.0%
+                      td 1.2%
+                      td 0.8%
+                    tr
+                      td 钻石VIP
+                      td 1.7
+                      td 388
+                      td 588
+                      td 100%
+                      td 1888
+                      td 20
+                      td 1.2%
+                      td 1.4%
+                      td 0.9%
+                    tr
+                      td 至尊VIP
+                      td 2
+                      td 588
+                      td 888
+                      td 100%
+                      td 3888
+                      td 25
+                      td 12.%
+                      td 15.%
+                      td 1.0%
+
+                .tips
+                  p.title 温馨提示：
+                  ul
+                    li 1. 晋级礼金8倍流水投注即可取款，每个VIP级别晋升礼金只可申请一次,VIP等级每月只可晋升一次。
+                    li 2.VIP免费筹码将会在晋升VIP成功后(首次晋升为VIP的会员)，次日派发。每月5号17:00统一派发相应VIP等级的免费筹码，完成8倍流水即可提款！(达到VIP投注要求，则每月都可申请免费筹码)。
+                    li 3. 乐币：每天17:00结算前一天的乐币额。 计算公式：当天投注流水/(500/当前等级乐币倍数)，例如：
+                      br/ 白银VIP：100000/(500/1.1)= 220乐币
+                      br/ 至尊VIP：100000/(500 / 2)= 400乐币
+                    li 4. 返水优惠在晋级成为VIP后即时生效，存款优惠在晋级成为VIP会员后次月即可申请，取款投注额要求=(本金+红利)*相应倍数。
+                    li 5. 会员资格是不可转让给他人，本计划只适用于个人进行投注，任何团体/组织予非娱乐性目的进行不正常投注者，保留所有权利没收所得盈利，并于不通知的情况下任何时候终止所得优惠，冻结该会员账号,不得异议！
+                    li 6. 所有享受VIP优惠的会员，需遵守多乐娱乐城用户协议的相关条款！
+                    li 7. 多乐娱乐城保留修改、订正和最终解释权！
+
+
+      include ./layout/footer.pug
+
+      include ./layout/fix_service.pug
+
+
+
+
+
+    include ./layout/common_scripts.pug
+
+
+    script(src='./lib/jquery.marquee.js')
+
+    script.
+
+      $(document).ready(function(){
+        baseCtrl();
+
+        //add menu active
+        $('#tMenu>li:nth-child(8)').addClass('active');
+
+
+
+
+      });//end of document ready
+

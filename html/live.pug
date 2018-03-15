@@ -1,0 +1,68 @@
+extends ./layout/head.pug
+append page_head
+  link(rel="stylesheet" href="./css/live.css")
+
+
+block body
+  body
+    .wrapper
+      include ./layout/full_header.pug
+
+      .main
+        .wrap
+          img.bg(src="./imgs/live/live_banner_bg.jpg" alt="")
+
+          .banner
+            .swiper-container.live_banner
+              .swiper-wrapper
+                .swiper-slide                      
+                  img(src="./imgs/live/banner/live_banner_01.png" alt="")
+                .swiper-slide                      
+                  img(src="./imgs/live/banner/live_banner_01.png" alt="")
+                .swiper-slide                      
+                  img(src="./imgs/live/banner/live_banner_01.png" alt="")
+          .swiper-button-next
+          .swiper-button-prev
+
+
+          .game_wrap
+            .game
+              a(href="javascript:;")
+                img(src="./imgs/live/btn/live_BBIN_btn.png", alt="")
+            .game
+              a(href="javascript:;")
+                img(src="./imgs/live/btn/live_AG_btn.png", alt="")
+            .game
+              a(href="javascript:;")
+                img(src="./imgs/live/btn/live_PT_btn.png", alt="")
+            .clearfix
+          
+
+
+
+      include ./layout/footer.pug
+
+      include ./layout/fix_service.pug
+
+
+    include ./layout/common_scripts.pug
+    script.
+      var bannerSwiper = new Swiper ('.live_banner', {
+        loop: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false
+        },    
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev'
+        }
+      });      
+      $(document).ready(function(){
+        baseCtrl();
+
+        //add menu active
+        $('#tMenu>li:nth-child(3)').addClass('active');
+
+      });//end of document ready
+

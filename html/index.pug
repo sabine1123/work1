@@ -1,0 +1,537 @@
+extends ./layout/head.pug
+append page_head
+	link(rel="stylesheet" href="./lib/bootstrap-3.3.7-dist/css/bootstrap.vertical-tabs.min.css")
+	link(rel="stylesheet" href="./css/index.css")
+	//- script(src='/vendor/three.js')
+	//- script(src='/game.js')
+
+block body
+	body
+		.wrapper
+			include ./layout/full_header.pug
+			//- header.full_header
+			//- 	.mem_bar
+			//- 		.box
+			//- 			.pull-left.left
+			//- 				span GMT+08:00 2017-10-09 18:42:39
+
+			//- 			.pull-right.right
+			//- 				.off_login
+			//- 					.form
+			//- 						span.title 账号
+			//- 						input.input_middle.input_fill_dark(type="text")
+			//- 					.form
+			//- 						span.title 密码
+			//- 						input.input_middle.input_fill_dark(type="password")
+
+			//- 					.btn.btn_fill_green.btn_small 
+			//- 						a(href="javascript:;") 登录
+
+			//- 					a.forget(href="javascript:;") 忘记密码？
+								
+			//- 					.btn.btn_fill_gray.btn_small
+			//- 						a(href="javascript:;") 注册
+
+			//- 				.on_login
+			//- 					span.greetings 您好，
+			//- 						span.font_yellow flashtest
+			//- 					.balance#tbal
+			//- 						.num ¥300
+			//- 							span.font_sub .22
+			//- 						.reload
+			//- 							img(src="./imgs/common/icons/hd_reload_icon.png", alt="") 
+			//- 					.switch.on
+			//- 						.toggle
+
+			//- 					.member
+			//- 						ul
+			//- 							li 
+			//- 								a 充值
+			//- 							li 
+			//- 								a 转帐
+			//- 							li
+			//- 								a 取款
+			//- 							li
+			//- 								a 个人中心
+			//- 							li
+			//- 								.btn.btn_fill_gray.btn_small 
+			//- 									a(href="javascript:;") 登出
+
+			//- 			.clearfix
+
+
+			//- 	nav
+			//- 		.box
+			//- 			.pull-left.left
+			//- 				a(href="javascript:;")
+			//- 					img(src="./imgs/common/logo.png", alt="")
+			//- 			.right
+			//- 				ul.menu
+			//- 					li.active
+			//- 						a(href="javascript:;")
+			//- 							img(src="./imgs/common/icons/home_icon.png", alt="")
+			//- 							span.title 首页
+			//- 					li
+			//- 						a(href="javascript:;")
+			//- 							img(src="./imgs/common/icons/slot_icon.png", alt="")
+			//- 							span.title 老虎机
+			//- 					li
+			//- 						a(href="javascript:;")
+			//- 							img(src="./imgs/common/icons/menu_live_icon.png", alt="")
+			//- 							span.title 真人
+			//- 					li
+			//- 						a(href="javascript:;")
+			//- 							img(src="./imgs/common/icons/menu_sport_icon.png", alt="")
+			//- 							span.title 体育
+			//- 					li
+			//- 						a(href="javascript:;")
+			//- 							img(src="./imgs/common/icons/menu_lotto_icon.png", alt="")
+			//- 							span.title 彩票
+			//- 					li
+			//- 						a(href="javascript:;")
+			//- 							img(src="./imgs/common/icons/menu_fishing_icon.png", alt="")
+			//- 							span.title 补鱼
+			//- 					li
+			//- 						a(href="javascript:;")
+			//- 							img(src="./imgs/common/icons/menu_event_icon.png", alt="")
+			//- 							span.title 优惠
+			//- 					li
+			//- 						a(href="javascript:;")
+			//- 							img(src="./imgs/common/icons/menu_club_icon.png", alt="")
+			//- 							span.title 俱乐部
+			//- 			.clearfix
+
+
+			.main
+				section.full_banner
+					.swiper-container.index_banner
+						.swiper-wrapper
+							.swiper-slide                      
+								img(src="imgs/index/banner/index_banner_01.jpg" alt="")
+							.swiper-slide                      
+								img(src="imgs/index/banner/index_banner_01.jpg" alt="")
+							.swiper-slide                      
+								img(src="imgs/index/banner/index_banner_01.jpg" alt="")
+							.swiper-slide                      
+								img(src="imgs/index/banner/index_banner_01.jpg" alt="")
+						.swiper-pagination.index_banner_p
+				section.marquee
+					.marquee_content
+						.marquee_wrap
+
+				section.content
+					.box
+						.box_group
+							.game_group.slot
+								.title
+									img(src="imgs/index/index_slot_title.jpg" alt="")
+								.money
+									.num#jackpotVal 10000000
+
+								.game_pf
+									.pf.c_tab(role="tabpanel")
+
+										ul(class="nav nav-tabs" role="tablist")
+											li(role="presentation" class="active")
+												a(href="#PT" aria-controls="PT" role="tab" data-toggle="tab") PT
+
+											li(role="presentation")
+												a(href="#HABA" aria-controls="HABA" role="tab" data-toggle="tab") HABA
+
+											li(role="presentation")
+												a(href="#AG" aria-controls="AG" role="tab" data-toggle="tab") AG  
+
+											li(role="presentation")
+												a(href="#DT" aria-controls="DT" role="tab" data-toggle="tab") DT
+
+											li(role="presentation")
+												a(href="#MG" aria-controls="MG" role="tab" data-toggle="tab") MG
+
+											li(role="presentation")
+												a(href="#TTG" aria-controls="TTG" role="tab" data-toggle="tab") TTG 
+
+											li(role="presentation")
+												a(href="#BS" aria-controls="BS" role="tab" data-toggle="tab") BS
+
+											li(role="presentation")
+												a(href="#PNG" aria-controls="PNG" role="tab" data-toggle="tab") PNG
+
+											li(role="presentation")
+												a(href="#BBIN" aria-controls="BBIN" role="tab" data-toggle="tab") BBIN 												
+											li.pull-right.more 
+												a(href="javascript:;") +更多
+
+
+									
+									.pf_title
+										img(src="imgs/index/index_hot_title.jpg" alt="")
+									.pf_content(class="tab-content")
+										div(role="tabpanel" class="tab-pane active" id="PT") 
+											ul
+												li
+													a(href="javascript:;")
+														img(src="imgs/index/slot_img_01.jpg" alt="")
+														p.game_title 幸运女孩
+												li
+													a(href="javascript:;")
+														img(src="imgs/index/slot_img_02.jpg" alt="")
+														p.game_title 猴子基诺
+												li
+													a(href="javascript:;")
+														img(src="imgs/index/slot_img_03.jpg" alt="")
+														p.game_title 杂技群英会
+												li
+													a(href="javascript:;")
+														img(src="imgs/index/slot_img_04.jpg" alt="")
+														p.game_title 机器人杰克
+										div(role="tabpanel" class="tab-pane" id="HABA") HABA标签的内容
+										div(role="tabpanel" class="tab-pane" id="AG") AG标签的内容
+										div(role="tabpanel" class="tab-pane" id="DT") DT标签的内容										
+										div(role="tabpanel" class="tab-pane" id="MG") MG标签的内容
+										div(role="tabpanel" class="tab-pane" id="TTG") TTG标签的内容              
+										div(role="tabpanel" class="tab-pane" id="BS") BS标签的内容										
+										div(role="tabpanel" class="tab-pane" id="PNG") PNG标签的内容
+										div(role="tabpanel" class="tab-pane" id="BBIN") BBIN标签的内容 
+
+							.game_group.live
+								a(href="javascript:;")
+									img(src="imgs/index/btn/index_AGLive_btn.jpg" alt="")
+								a(href="javascript:;")
+									img(src="imgs/index/btn/index_BBINLive_btn.jpg" alt="")
+								a(href="javascript:;")
+									img(src="imgs/index/btn/index_PlaytechLive_btn.jpg" alt="")
+						.box_group
+							.game_group.sport
+								a(href="javascript:;")
+									img(src="imgs/index/btn/index_BBINSport_btn.jpg" alt="")
+								a(href="javascript:;")
+									img(src="imgs/index/btn/index_IBCBETSport_btn.jpg" alt="")
+
+							.game_group.fish
+								a(href="javascript:;")
+									img(src="imgs/index/btn/index_fishing_btn.jpg" alt="")
+							.game_group.lotto
+								a(href="javascript:;")
+									img(src="imgs/index/btn/index_lotto_btn.jpg" alt="")
+
+
+
+				section.advantage
+					img(src="imgs/index/index_safety_bg.jpg" alt="")
+
+			include ./layout/footer.pug
+			//- footer
+			//- 	.box.container-fluid
+			//- 		.row
+			//- 			.col-md-4.col-lg-4
+			//- 				.row
+			//- 					.left
+			//- 						.sub_wrap
+			//- 							.title
+			//- 								img(src="imgs/common/footer_Service_img.jpg" alt="")
+			//- 							.content.sec
+			//- 								.title
+			//- 									.pull-left.text
+			//- 										h4 存款到账
+			//- 										span.sub_title 平均时间
+			//- 									.pull-right.time
+			//- 										span.num 24
+			//- 										span.unit 秒
+			//- 									.clearfix
+			//- 								.con
+			//- 									.bar
+
+			//- 							.content.min
+			//- 								.title
+			//- 									.pull-left.text
+			//- 										h4 取款到账
+			//- 										span.sub_title 平均时间
+			//- 									.pull-right.time
+			//- 										span.num 2'15
+			//- 										span.unit 分
+			//- 									.clearfix
+			//- 								.con
+			//- 									.bar
+
+			//- 							.content.place
+			//- 								.pull-left.text
+			//- 									h4 便捷的银行服务					
+			//- 									img(src="imgs/common/footer_bank_img.jpg" alt="")
+			//- 									span.sub_title 目前支持的支付机构
+			//- 								.pull-right.time
+			//- 									span.num 40
+			//- 									span.unit 家
+			//- 								.clearfix
+
+			//- 			.col-md-4.col-lg-4
+			//- 				.row
+			//- 					.middle
+			//- 						.title
+			//- 							img(src="imgs/common/footer_partners_img.jpg" alt="")
+			//- 						ul.partners
+			//- 							li
+			//- 								img(src="imgs/common/footer_PT_img.jpg" alt="")
+			//- 							li
+			//- 								img(src="imgs/common/footer_MG_img.jpg" alt="")
+			//- 							li
+			//- 								img(src="imgs/common/footer_TOP_img.jpg" alt="")
+			//- 							li
+			//- 								img(src="imgs/common/footer_PlayGO_img.jpg" alt="")
+			//- 							li
+			//- 								img(src="imgs/common/footer_GamesOS_img.jpg" alt="")
+												
+			//- 						ul.partners
+			//- 							li
+			//- 								img(src="imgs/common/footer_AG_img.jpg" alt="")
+			//- 							li
+			//- 								img(src="imgs/common/footer_BBIN_img.jpg" alt="")
+			//- 							li
+			//- 								img(src="imgs/common/footer_BET_img.jpg" alt="")
+			//- 							li
+			//- 								img(src="imgs/common/footer_NYX_img.jpg" alt="")
+
+
+
+			//- 			.col-md-4.col-lg-4
+			//- 				.row
+			//- 					.right
+			//- 						.title
+			//- 							img(src="imgs/common/footer_help_img.jpg" alt="")
+
+			//- 						.footer_menu
+			//- 							.content
+			//- 								ul
+			//- 									li
+			//- 										a(href="javascript:;")
+			//- 											img(src="imgs/index/icons/index_next_icon.jpg", alt="") 
+			//- 											|代理加盟
+			//- 									li
+			//- 										a(href="javascript:;")
+			//- 											img(src="imgs/index/icons/index_next_icon.jpg", alt="")
+			//- 											|常见问题 
+			//- 									li
+			//- 										a(href="javascript:;")
+			//- 											img(src="imgs/index/icons/index_next_icon.jpg", alt="")
+			//- 											|联系我们
+			//- 								ul
+			//- 									li
+			//- 										a(href="javascript:;")
+			//- 											img(src="imgs/index/icons/index_next_icon.jpg", alt="")
+			//- 											|隐私策略
+			//- 									li
+			//- 										a(href="javascript:;")
+			//- 											img(src="imgs/index/icons/index_next_icon.jpg", alt="")
+			//- 											|责任条款
+			//- 									li
+			//- 										a(href="javascript:;")
+			//- 											img(src="imgs/index/icons/index_next_icon.jpg", alt="")
+			//- 											|服务条款
+			//- 							.content 乐娱乐城持有菲律宾政府PAGCOR博彩牌照且受其监管
+			//- 							.content
+			//- 								span 电话: 0063-906-2667-666 
+			//- 								span QQ: 9257868
+			//- 							.content
+			//- 								span Copyright © 2016 多乐娱乐国际控股
+			//- 								span 更多精彩 尽在多乐娱乐城
+
+			include ./layout/fix_service.pug
+			//- .fix_service
+			//- 	ul
+			//- 		li
+			//- 			a(href="javascript:;")
+			//- 				img(src="imgs/common/icons/aside_service_icon.png" alt="")
+			//- 				span 在线客服
+			//- 		li
+			//- 			a(href="javascript:;")
+			//- 				img(src="imgs/common/icons/weChat_icon.png" alt="")
+			//- 				span 微信扫码
+			//- 		li
+			//- 			a(href="javascript:;")
+			//- 				img(src="imgs/common/icons/aside_club_icon.png" alt="")
+			//- 				span 俱乐部
+			//- 		li
+			//- 			a(href="javascript:;")
+			//- 				img(src="imgs/common/icons/aside_down_icon.png" alt="")
+			//- 				span 下载中心
+			//- 		li
+			//- 			a(href="javascript:;")
+			//- 				img(src="imgs/common/icons/aside_problem_icon.png" alt="")
+			//- 				span 常见问题
+			//- 		li.top#gotop
+			//- 			img(src="imgs/common/icons/top_icon.png" alt="")
+
+			div(id="marquee1" class="modal popup_tab" data-backdrop="static")
+				.modal-dialog
+					.modal-content
+						//- .p_header
+						button( class="close close_btn" data-dismiss="modal" aria-hidden="true")
+								img(src="imgs/index/btn/index_popupClose_icon.png")
+
+						.p_body
+							.col-lg-3
+								.row
+									.menu
+										ul
+											li(data-tab="tab1")
+												a(href="#tab1", data-toggle="tab") 
+													span.title 微信支付维护公告
+													img.icon(src="imgs/index/icons/index_popupNext_icon.jpg")
+											li(data-tab="tab2")
+												a(href="#tab2", data-toggle="tab")
+													span.title 支持网银转账公告
+													img.icon(src="imgs/index/icons/index_popupNext_icon.jpg")
+											li(data-tab="tab3")
+												a(href="#tab3", data-toggle="tab",)
+													span.title 标题一
+													img.icon(src="imgs/index/icons/index_popupNext_icon.jpg")
+											li(data-tab="tab4")
+												a(href="#tab4", data-toggle="tab",)
+													span.title 标题二
+													img.icon(src="imgs/index/icons/index_popupNext_icon.jpg")
+
+											li(data-tab="tab5")
+												a(href="#tab5", data-toggle="tab",) 
+													span.title 标题三
+													img.icon(src="imgs/index/icons/index_popupNext_icon.jpg")
+											li(data-tab="tab6")
+												a(href="#tab6", data-toggle="tab",)
+													span.title 标题四
+													img.icon(src="imgs/index/icons/index_popupNext_icon.jpg")
+											li(data-tab="tab7")
+												a(href="#tab7", data-toggle="tab",)
+													span.title 标题五
+													img.icon(src="imgs/index/icons/index_popupNext_icon.jpg")
+											li(data-tab="tab8")
+												a(href="#tab8", data-toggle="tab",)
+													span.title 标题六
+														img.icon(src="imgs/index/icons/index_popupNext_icon.jpg")
+											
+							.col-lg-9
+								.row
+									.tab-content.content
+										.tab-pane#tab1 
+											.title 新增首款微信
+											p.text 新增收款微信: 尊敬的会员您好，新增收款方式“微信收款”已开始启用，如在入款过程中有任何问题请联系在线客服咨询，感谢您的支持！！！新增收款微信: 尊敬的会员您好，新增收款方式“微信收款”已开始启用.
+										.tab-pane#tab2 
+											.title 支持网银转账公告
+											p.text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam excepturi sint doloribus sit, eaque necessitatibus ea. Pariatur doloribus nisi molestiae iste nam, ullam adipisci rerum atque eaque, laborum expedita incidunt.
+										.tab-pane#tab3 
+											.title 标题一
+											p.text  1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem saepe nobis sunt, eum, eius tempora fuga, voluptate corrupti, minus temporibus repellat repellendus excepturi sint pariatur iste perferendis minima. Harum, ducimus!
+
+										.tab-pane#tab4 
+											.title 标题二
+											p.text  2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et repellendus enim inventore dolor culpa ex assumenda, nemo, aspernatur rerum qui maiores! Rerum fugiat, a accusantium tempora illum error autem earum!
+
+										.tab-pane#tab5 
+											.title 标题三
+											p.text  3 Lorem ipsum dolor sit amet
+
+										.tab-pane#tab6 
+											.title 标题四
+											p.text  4 Lorem ipsum dolor sit amet					
+
+										.tab-pane#tab7 
+											.title 标题五
+											p.text  5 Lorem ipsum dolor sit amet
+
+										.tab-pane#tab8 
+											.title 标题六
+											p.text  6 Lorem ipsum dolor sit amet																	
+							.clearfix
+
+
+
+
+		include ./layout/common_scripts.pug
+		//- script(src='./lib/bootstrap-3.3.7-dist/js/bootstrap.min.js')
+		//- script(src='./lib/Swiper-master/js/swiper.min.js')
+		//- script(src='./lib/jquery.blockUI.js')
+		//- script(src='./js/base.js')
+		//- script(src='./js/object.js')
+
+		script(src='./lib/jquery.marquee.js')
+
+		script.
+			var bannerSwiper = new Swiper ('.index_banner', {
+				loop: true,
+				pagination: {
+			    el: '.index_banner_p',
+			    clickable: true,
+				},
+				autoplay: {
+				  delay: 3000,
+				  disableOnInteraction: false
+				},    
+				navigation: {
+				  nextEl: '.swiper-button-next',
+				  prevEl: '.swiper-button-prev'
+				}
+			});
+
+			//累积奖池动态效果
+			function getCookie(cname) {
+				var name = cname + "=";
+				var decodedCookie = decodeURIComponent(document.cookie);
+				var ca = decodedCookie.split(';');
+				for(var i = 0; i <ca.length; i++) {
+					var c = ca[i];
+					while (c.charAt(0) == ' ') {
+						c = c.substring(1);
+					}
+					if (c.indexOf(name) == 0) {
+						return c.substring(name.length, c.length);
+					}
+				}
+					return "";
+			}
+
+			if(getCookie('jackpotval') == 'undefined' || getCookie('jackpotval') == '' || getCookie('jackpotval') == 'NaN') {
+				var jackpotVal = parseFloat($('#jackpotVal').text());
+				document.cookie = "jackpotval="+jackpotVal;
+			}
+			else {
+				var jackpotVal = parseFloat(getCookie('jackpotval'));
+			}
+
+			setInterval(function(){
+				document.cookie = "jackpotval="+jackpotVal;
+
+				var strVal = jackpotVal.toString();
+				var splits = strVal.split("");
+				var sArr = [];
+
+				for(var i =0; i < splits.length; i++){
+					sArr[i] = '<span>'+splits[i]+'</span>'			
+				}
+				var newArr = sArr.join("");
+				$('#jackpotVal').html(newArr);
+				jackpotVal = parseFloat(jackpotVal) + 1;
+			}, 1000);
+
+
+			$(document).ready(function(){
+				baseCtrl();
+
+				//add menu active
+				$('#tMenu>li:nth-child(1)').addClass('active');
+
+				//marquee
+				var marquee_str = `<span data-toggle="modal" data-target="#marquee1" data-tab="tab1">尊敬的会员由于目前入款人数金额较大，微信收款账号已经更改</span><span data-toggle="modal" data-target="#marquee1" data-tab="tab2">2尊敬的会员由于目前入款人数金额较大，微信收款账号已经更改</span>`
+				$('.marquee_wrap').append(marquee_str).marquee({
+				  duration: 15000,
+				  direction: 'left'
+				});
+				
+				//pupup tab ctrl
+				$('.marquee_wrap span').on('click',function(){
+					$(".popup_tab .menu li, .content>.tab-pane").removeClass('active');
+					var t1 = $(this).attr('data-tab');
+					$(".popup_tab .menu li[data-tab='"+t1+"'],.content>.tab-pane[id='"+t1+"']").addClass('active');
+					
+				});
+
+
+
+			});//end of document ready
+

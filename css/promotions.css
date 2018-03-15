@@ -1,0 +1,156 @@
+.btn {
+  background-image: none;
+  background-repeat: no-repeat;
+  border: none;
+  text-shadow: none;
+  border-radius: 2px;
+  padding: 0; }
+
+.btn_fill_green {
+  background-color: #168849;
+  color: #fff; }
+  .btn_fill_green:hover, .btn_fill_green:focus, .btn_fill_green:active {
+    color: #fff; }
+
+.btn_fill_gray {
+  background-color: #676f6a;
+  color: #fff; }
+  .btn_fill_gray:hover, .btn_fill_gray:focus, .btn_fill_gray:active {
+    color: #fff; }
+
+.btn_fill_light_gray {
+  background-color: #b2ada7;
+  color: #fff;
+  border-radius: 4px; }
+  .btn_fill_light_gray:hover, .btn_fill_light_gray:focus, .btn_fill_light_gray:active {
+    color: #fff; }
+
+.btn_fill_orange {
+  background-color: #e69016;
+  color: #fff;
+  border-radius: 4px; }
+  .btn_fill_orange:hover, .btn_fill_orange:focus, .btn_fill_orange:active {
+    color: #fff; }
+
+.btn_empty_green {
+  border: 1px solid #168849;
+  color: #168849;
+  background-color: #fff; }
+  .btn_empty_green:hover, .btn_empty_green:focus, .btn_empty_green:active {
+    color: #168849; }
+
+.btn_empty_gray {
+  border: 1px solid #c2c7c3;
+  color: #c8d0cf;
+  background-color: #fff; }
+  .btn_empty_gray:hover, .btn_empty_gray:focus, .btn_empty_gray:active {
+    color: #c8d0cf; }
+
+.btn_small {
+  width: 71px;
+  height: 31px;
+  line-height: 31px; }
+
+.btn_medium {
+  width: 102px;
+  height: 41px;
+  line-height: 41px; }
+
+@-webkit-keyframes updown {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+  100% {
+    -webkit-transform: translateY(5px);
+    transform: translateY(5px); } }
+
+@keyframes updown {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+  100% {
+    -webkit-transform: translateY(5px);
+    transform: translateY(5px); } }
+
+.c_tab .nav-tabs {
+  border-bottom: 1px solid transparent; }
+
+.c_tab .nav-tabs li.active {
+  color: #000; }
+
+.c_tab .nav > li > a {
+  width: 100%;
+  padding: 16px 30px;
+  border: none; }
+
+.c_tab .nav > li > a:focus, .c_tab .nav > li > a:hover {
+  background-color: #f1f6f2; }
+
+.c_tab .nav-tabs > li.active > a, .c_tab .nav-tabs > li.active > a:focus, .c_tab .nav-tabs > li.active > a:hover {
+  color: inherit;
+  border: none;
+  background-color: #f1f6f2; }
+
+.c_tab .nav li.more > a {
+  background-color: transparent; }
+
+.main .content {
+  background: url(../imgs/event/event_bg.jpg) #e7eee9 no-repeat;
+  background-size: contain;
+  padding-bottom: 70px;
+  min-height: 829px; }
+  .main .content .event_menu {
+    background-color: #fff; }
+    .main .content .event_menu .menu {
+      color: #5a5c59;
+      font-size: 1rem;
+      letter-spacing: 1px;
+      background-color: #fff;
+      font-weight: bold; }
+  .main .content .event_list .event_box li {
+    vertical-align: top;
+    margin-right: 20px;
+    margin-top: 28px;
+    display: inline-block; }
+    .main .content .event_list .event_box li:nth-child(even) {
+      margin-right: 0px; }
+    .main .content .event_list .event_box li.upcoming .info .sub_title {
+      color: #17b7f2; }
+    .main .content .event_list .event_box li.running .info .sub_title {
+      color: #ff9c01; }
+    .main .content .event_list .event_box li.finished .event_img {
+      -webkit-filter: grayscale(1);
+      filter: grayscale(1); }
+    .main .content .event_list .event_box li.finished .info .sub_title {
+      color: #181a18; }
+  .main .content .event_list .event_box .event {
+    background-color: #fff;
+    padding: 10px; }
+    .main .content .event_list .event_box .event .event_img, .main .content .event_list .event_box .event .info {
+      display: inline-block;
+      vertical-align: top; }
+    .main .content .event_list .event_box .event .event_img {
+      width: 239px; }
+    .main .content .event_list .event_box .event .info {
+      width: 325px;
+      padding: 37px 15px 0 25px; }
+      .main .content .event_list .event_box .event .info .head {
+        font-size: 1rem;
+        text-align: left;
+        letter-spacing: 1px; }
+        .main .content .event_list .event_box .event .info .head .title {
+          color: #181a18; }
+      .main .content .event_list .event_box .event .info .middle {
+        color: #79817c;
+        font-size: 0.875rem;
+        letter-spacing: 0.8px;
+        line-height: 2.07;
+        margin: 30px 0 0; }
+      .main .content .event_list .event_box .event .info .bottom {
+        color: #79817c;
+        font-size: 0.75rem;
+        margin-top: 30px; }
+        .main .content .event_list .event_box .event .info .bottom .time, .main .content .event_list .event_box .event .info .bottom .icon {
+          display: inline-block; }
+        .main .content .event_list .event_box .event .info .bottom .icon {
+          cursor: pointer; }

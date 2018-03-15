@@ -1,0 +1,81 @@
+$font: '微軟雅黑體','微软雅黑体','微軟正黑體','微软正黑体','Arial'
+$font_green: #319746
+//old
+$font_gray: #5f645e
+$font_icon_gray: #bac1bf
+$font_light_dark: #353a38
+//
+$font_yellow: #f6cc1e
+$font_light: #dbe6e0
+
+
+
+
+//-------------
+$btn_green: #168849
+$btn_gray: #676f6a
+$btn_light_gray: #b2ada7
+$btn_orange: #e69016
+
+$font_size_s: 0.75rem //12px
+$font_size_base: 0.875rem //14px
+$font_size_large: 1rem //16px
+$font_size_Llarge: 1.125rem //18px
+$font_size_Xlarge: 1.75rem //28px
+//-----以上11/24後已用
+
+
+
+
+//after 11/23 add
+$font_dec_l: 3.4375rem//55px
+$font_m_title: 1.375rem
+
+
+$popup_radius: 4px
+
+// from shawn----------
+$header_green: #116f4d
+$SideNav_green: #195c44
+$white_color: #ffffff
+//---------------------
+
+
+
+
+
+@mixin popup_common
+	color: $font_light_dark
+	font-family: $font
+	padding: 15px 10px
+	.p_header
+		img
+			width: 13px
+	.p_title
+		font-size: $font_size_large
+		.icon
+			width: 2px
+			height: 15px
+			background-color: $btn_green
+			margin-right: 8px
+		.icon,span
+			display: inline-block
+			vertical-align: middle
+	.p_body
+		font-size: $font_size_base
+
+@mixin popup_open
+	display: none
+	position: fixed
+	bottom: 50px
+	// background-color: #fff
+	z-index: 500
+	margin-bottom: -2px
+	width: 100%
+	.popup_mask
+		&:before
+			content: ''
+			display: block
+			width: 100vw
+			height: 100vh
+			background-color: rgba(0,0,0,0.5)

@@ -1,0 +1,32 @@
+extends ./layout/head.pug
+append page_head
+  link(rel="stylesheet" href="./css/fishing.css")
+
+
+block body
+  body
+    .wrapper
+      include ./layout/full_header.pug
+
+      .main
+        img.bg(src="./imgs/fishing/fishing_bg.jpg", alt="")
+
+        .start
+          a(href="javascript:;")
+            img(src="./imgs/fishing/btn/fishing_star_btn.png", alt="")
+
+      include ./layout/footer.pug
+
+      include ./layout/fix_service.pug
+
+
+    include ./layout/common_scripts.pug
+    script.
+      $(document).ready(function(){
+        baseCtrl();
+
+        //add menu active
+        $('#tMenu>li:nth-child(6)').addClass('active');
+
+      });//end of document ready
+

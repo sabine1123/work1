@@ -1,0 +1,270 @@
+extends ./layout/head.pug
+append page_head
+  link(rel="stylesheet" href="./lib/bootstrap-3.3.7-dist/css/bootstrap.vertical-tabs.min.css")
+  link(rel="stylesheet", href="./lib/slick/slick.css")
+  link(rel="stylesheet", href="./lib/slick/slick-theme.css")
+  link(rel="stylesheet" href="./css/slot.css")
+
+  //- script(src='/game.js')
+
+block body
+  body
+    .wrapper
+      include ./layout/full_header.pug
+
+      .main
+        section.full_banner
+          .swiper-container.index_banner
+            .swiper-wrapper
+              .swiper-slide                      
+                img(src="imgs/slot/banner/slot_banner_01.jpg" alt="")
+              .swiper-slide                      
+                img(src="imgs/slot/banner/slot_banner_01.jpg" alt="")
+              .swiper-slide                      
+                img(src="imgs/slot/banner/slot_banner_01.jpg" alt="")
+              .swiper-slide                      
+                img(src="imgs/slot/banner/slot_banner_01.jpg" alt="")
+            .swiper-pagination.index_banner_p
+          .list_block
+            .list_box.tList
+              div
+                ul.list
+                  li abcas***
+                  li 疯狂的猴子
+                  li 550060元
+
+              div
+                ul.list
+                  li abcas***
+                  li 疯狂的猴子
+                  li 550060元
+
+              div
+                ul.list
+                  li abcas***
+                  li 疯狂的猴子
+                  li 550060元    
+
+              div
+                ul.list
+                  li abcas***
+                  li 疯狂的猴子
+                  li 550060元
+
+              div
+                ul.list
+                  li abcas***
+                  li 疯狂的猴子
+                  li 550060元
+
+              div
+                ul.list
+                  li abcas***
+                  li 疯狂的猴子
+                  li 550060元                                  
+
+        section.content
+          //- .pf_menu
+          //- .box
+          //- .box
+          //-   .box_group
+          .game_pf
+            .box
+              .pf.c_tab(role="tabpanel")
+
+                ul(class="nav nav-tabs" role="tablist")
+                  li(role="presentation" class="active")
+                    a(href="#PT" aria-controls="PT" role="tab" data-toggle="tab") PT
+
+                  li(role="presentation")
+                    a(href="#HABA" aria-controls="HABA" role="tab" data-toggle="tab") HABA
+
+                  li(role="presentation")
+                    a(href="#AG" aria-controls="AG" role="tab" data-toggle="tab") AG  
+
+                  li(role="presentation")
+                    a(href="#DT" aria-controls="DT" role="tab" data-toggle="tab") DT
+
+                  li(role="presentation")
+                    a(href="#MG" aria-controls="MG" role="tab" data-toggle="tab") MG
+
+                  li(role="presentation")
+                    a(href="#TTG" aria-controls="TTG" role="tab" data-toggle="tab") TTG 
+
+                  li(role="presentation")
+                    a(href="#BS" aria-controls="BS" role="tab" data-toggle="tab") BS
+
+                  li(role="presentation")
+                    a(href="#PNG" aria-controls="PNG" role="tab" data-toggle="tab") PNG
+
+                  li(role="presentation")
+                    a(href="#BBIN" aria-controls="BBIN" role="tab" data-toggle="tab") BBIN                        
+                  li.pull-right.search 
+                    .search_box
+                      input.search_input(type="text" placeholder="请输入游戏名称")
+                      button.btn.search_btn
+                        img(src="imgs/slot/icons/search_icon.png" alt="")
+
+          .game_list
+            .box
+              .game_pf_list
+                .tab-content
+                  div(role="tabpanel" class="tab-pane active" id="PT") 
+                    .pf_cat.p_tab(role="tabpanel") 
+                      ul(class="nav nav-tabs" role="tablist")
+                        li(role="presentation" class="active")
+                          a(href="#all" aria-controls="all" role="tab" data-toggle="tab") 全部游戏
+                        li(role="presentation")
+                          a(href="#hot" aria-controls="hot" role="tab" data-toggle="tab") 热门游戏
+
+                      .tab-content
+                        div(role="tabpanel" class="tab-pane active" id="all") 
+                          //- |all
+                          ul.games_box
+                            - for (var x = 0; x < 10; x++)
+                              li
+                                p.game_title.NEW 疯狂的猴子
+                                .game
+                                  img.game_img(src="imgs/slot/slot_img_01.jpg" alt="")
+                                  .game_btn
+                                    .btns.btn_medium.btn_fill_orange 進入遊戲
+                                    .btns.btn_medium.btn_fill_light_gray 免費試玩
+
+                              li
+                                p.game_title.HOT 地狱烈火
+                                .game                   
+                                  img.game_img(src="imgs/slot/slot_img_02.jpg" alt="")
+                                  .game_btn
+                                    .btns.btn_medium.btn_fill_orange 進入遊戲
+                                    .btns.btn_medium.btn_fill_light_gray 免費試玩
+                              li
+                                //- a(href="javascript:;")
+                                p.game_title 大鹏展翅哈
+                                .game                  
+                                  img.game_img(src="imgs/slot/slot_img_03.jpg" alt="")
+                                  .game_btn
+                                    .btns.btn_medium.btn_fill_orange 進入遊戲
+                                    .btns.btn_medium.btn_fill_light_gray 免費試玩                                    
+
+                              li
+                                //- a(href="javascript:;")
+                                p.game_title 勇往直前
+                                .game                   
+                                  img.game_img(src="imgs/slot/slot_img_04.jpg" alt="")
+                                  .game_btn
+                                    .btns.btn_medium.btn_fill_orange 進入遊戲
+                                    .btns.btn_medium.btn_fill_light_gray 免費試玩                                    
+
+                              li
+                                //- a(href="javascript:;")
+                                p.game_title 窃窃私语的企鹅
+                                .game              
+                                  img.game_img(src="imgs/slot/slot_img_01.jpg" alt="")
+                                  .game_btn
+                                    .btns.btn_medium.btn_fill_orange 進入遊戲
+                                    .btns.btn_medium.btn_fill_light_gray 免費試玩
+                            .clearfix
+
+                          #load_more
+                            img.game_img(src="imgs/slot/mouse_img.jpg" alt="")
+
+
+                        div(role="tabpanel" class="tab-pane" id="hot") hot  
+
+
+                    
+                  div(role="tabpanel" class="tab-pane" id="HABA") HABA标签的内容
+                  div(role="tabpanel" class="tab-pane" id="AG") AG标签的内容
+                  div(role="tabpanel" class="tab-pane" id="DT") DT标签的内容                   
+                  div(role="tabpanel" class="tab-pane" id="MG") MG标签的内容
+                  div(role="tabpanel" class="tab-pane" id="TTG") TTG标签的内容              
+                  div(role="tabpanel" class="tab-pane" id="BS") BS标签的内容                   
+                  div(role="tabpanel" class="tab-pane" id="PNG") PNG标签的内容
+                  div(role="tabpanel" class="tab-pane" id="BBIN") BBIN标签的内容 
+
+
+      include ./layout/footer.pug
+
+
+      include ./layout/fix_service.pug
+
+
+
+
+
+    include ./layout/common_scripts.pug
+
+    script(src='./lib/slick/slick.min.js')
+    script(src='./lib/infinite_scroll.js')
+    script.
+      var bannerSwiper = new Swiper ('.index_banner', {
+        loop: true,
+        pagination: {
+          el: '.index_banner_p',
+          clickable: true,
+        },
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false
+        },    
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev'
+        }
+      });
+
+      function addContent() {
+        $(".games_box>li:hidden").slice(0, 20).fadeIn(400);
+        if($(".games_box>li:hidden").length == 0){
+          $("#load_more").hide();
+        }else{
+          $("#load_more").show();
+        }
+      }
+
+
+      $(document).ready(function(){
+        baseCtrl();
+
+        //add menu active
+        $('#tMenu>li:nth-child(2)').addClass('active');
+
+
+        // winner list
+        $('.tList').slick({
+          vertical: true,
+          arrows: false,
+          autoplay: true,
+          autoplaySpeed: 2000,
+          slidesToShow: 5,
+        });
+
+        $('.game').hover(function(){
+          $(this).find('.game_btn').css('bottom','0');
+        },function(){
+          $(this).find('.game_btn').css('bottom','-100%');
+        });
+
+        // load more
+        $(document).infiniteJscroll({
+            offset:150,
+            //- topOfPage:function(){
+            //-     console.log('Scrolled to Page Top');
+
+            //- },
+            bottomOfPage:function(){
+                //- console.log('Scrolled to Page Bottom');
+                addContent();
+            },
+            pageInit:function(){
+               //- console.log('Initialize page');
+                addContent();
+            }
+         });
+
+
+
+
+
+      });//end of document ready
+

@@ -1,0 +1,252 @@
+extends ./layout/head.pug
+append page_head
+  //- link(rel="stylesheet" href="./lib/malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.css")
+  link(rel="stylesheet" href="./css/promotions.css")
+
+block body
+  body
+    .wrapper
+      include ./layout/full_header.pug
+
+      .main
+        section.full_banner
+          img(src="./imgs/event/banner/event_banner_01.jpg" alt="")
+
+
+        section.content
+          .event_menu
+            .box
+              .menu.c_tab(role="tabpanel")
+
+                ul(class="nav nav-tabs" role="tablist")
+                  li(role="presentation" class="active")
+                    a(href="#all" aria-controls="all" role="tab" data-toggle="tab") 全部优惠
+                  li(role="presentation")
+                    a(href="#slot" aria-controls="slot" role="tab" data-toggle="tab") 老虎机优惠
+
+                  li(role="presentation")
+                    a(href="#live" aria-controls="live" role="tab" data-toggle="tab") 真人优惠  
+
+                  li(role="presentation")
+                    a(href="#sport" aria-controls="sport" role="tab" data-toggle="tab") 体育优惠
+          .event_wrap
+            .box
+              .event_list
+                .tab-content
+                  div(role="tabpanel" class="tab-pane active" id="all") 
+                    //- |all
+                    ul.event_box
+
+                      li.upcoming(data-toggle="modal" data-target="#event1")
+                        .event
+                          img.event_img(src="./imgs/event/event_img_01.jpg" alt="")
+                          .info
+                            .head
+                              span.title 以小博大3连存
+                              span.pull-right.sub_title 敬请期待
+                              .clearfix
+
+                            .middle
+                              |即日起多乐娱乐城的会员们在指定日期（星期三与星期日）累计存款达到200元后，当日即可申请以小博大三连存
+                            .bottom
+                              .time
+                                |07-28 00:00:00 至 02-18 23:59:59
+                              .pull-right.icon
+                                img(src="./imgs/event/btn/event_next_btn.png", alt="")
+                              .clearfix
+
+
+                        li.running
+                          .event
+                            img.event_img(src="./imgs/event/event_img_02.jpg" alt="")
+                            .info
+                              .head
+                                span.title 全民来打虎
+                                span.pull-right.sub_title 火热进行中
+                                .clearfix
+
+                              .middle
+                                |即日起多乐娱乐城的会员们在指定日期（星期三与星期日）累计存款达到200元后，当日即可申请以小博大三连存
+                              .bottom
+                                .time
+                                  |07-28 00:00:00 至 02-18 23:59:59
+                                .pull-right.icon
+                                  img(src="./imgs/event/btn/event_next_btn.png", alt="")
+                                .clearfix
+                        li.running
+                          .event
+                            img.event_img(src="./imgs/event/event_img_03.jpg" alt="")
+                            .info
+                              .head
+                                span.title 以小博大3连存
+                                span.pull-right.sub_title 火热进行中
+                                .clearfix
+
+                              .middle
+                                |即日起多乐娱乐城的会员们在指定日期（星期三与星期日）累计存款达到200元后，当日即可申请以小博大三连存
+                              .bottom
+                                .time
+                                  |07-28 00:00:00 至 02-18 23:59:59
+                                .pull-right.icon
+                                  img(src="./imgs/event/btn/event_next_btn.png", alt="")
+                                .clearfix
+
+                        li.running
+                          .event
+                            img.event_img(src="./imgs/event/event_img_04.jpg" alt="")
+                            .info
+                              .head
+                                span.title 以小博大3连存
+                                span.pull-right.sub_title 火热进行中
+                                .clearfix
+
+                              .middle
+                                |即日起多乐娱乐城的会员们在指定日期（星期三与星期日）累计存款达到200元后，当日即可申请以小博大三连存
+                              .bottom
+                                .time
+                                  |07-28 00:00:00 至 02-18 23:59:59
+                                .pull-right.icon
+                                  img(src="./imgs/event/btn/event_next_btn.png", alt="")
+                                .clearfix
+
+                        li.running
+                          .event
+                            img.event_img(src="./imgs/event/event_img_05.jpg" alt="")
+                            .info
+                              .head
+                                span.title 以小博大3连存
+                                span.pull-right.sub_title 火热进行中
+                                .clearfix
+
+                              .middle
+                                |即日起多乐娱乐城的会员们在指定日期（星期三与星期日）累计存款达到200元后，当日即可申请以小博大三连存
+                              .bottom
+                                .time
+                                  |07-28 00:00:00 至 02-18 23:59:59
+                                .pull-right.icon
+                                  img(src="./imgs/event/btn/event_next_btn.png", alt="")
+                                .clearfix
+
+                        li.running
+                          .event
+                            img.event_img(src="./imgs/event/event_img_02.jpg" alt="")
+                            .info
+                              .head
+                                span.title 以小博大3连存
+                                span.pull-right.sub_title 火热进行中
+                                .clearfix
+
+                              .middle
+                                |即日起多乐娱乐城的会员们在指定日期（星期三与星期日）累计存款达到200元后，当日即可申请以小博大三连存
+                              .bottom
+                                .time
+                                  |07-28 00:00:00 至 02-18 23:59:59
+                                .pull-right.icon
+                                  img(src="./imgs/event/btn/event_next_btn.png", alt="")
+                                .clearfix
+
+                        li.finished
+                          .event
+                            img.event_img(src="./imgs/event/event_img_03.jpg" alt="")
+                            .info
+                              .head
+                                span.title 以小博大3连存
+                                span.pull-right.sub_title 已结束
+                                .clearfix
+
+                              .middle
+                                |即日起多乐娱乐城的会员们在指定日期（星期三与星期日）累计存款达到200元后，当日即可申请以小博大三连存
+                              .bottom
+                                .time
+                                  |07-28 00:00:00 至 02-18 23:59:59
+                                .pull-right.icon
+                                  img(src="./imgs/event/btn/event_next_btn.png", alt="")
+                                .clearfix
+
+                        li.finished
+                          .event
+                            img.event_img(src="./imgs/event/event_img_01.jpg" alt="")
+                            .info
+                              .head
+                                span.title 以小博大3连存
+                                span.pull-right.sub_title 已结束
+                                .clearfix
+
+                              .middle
+                                |即日起多乐娱乐城的会员们在指定日期（星期三与星期日）累计存款达到200元后，当日即可申请以小博大三连存
+                              .bottom
+                                .time
+                                  |07-28 00:00:00 至 02-18 23:59:59
+                                .pull-right.icon
+                                  img(src="./imgs/event/btn/event_next_btn.png", alt="")
+                                .clearfix
+
+                  div(role="tabpanel" class="tab-pane" id="slot") 老虎机优惠
+                  div(role="tabpanel" class="tab-pane" id="live") 真人优惠
+                  div(role="tabpanel" class="tab-pane" id="sport") 体育优惠
+
+      <!--popup-->
+      div(id="event1" class="modal popup_event" data-backdrop="static")
+        .modal-dialog
+          .modal-content
+            button( class="close close_btn" data-dismiss="modal" aria-hidden="true")
+                img(src="./imgs/event/btn/event_close_btn.png")
+            .e_body 
+              .banner
+                img(src="./imgs/event/pop_img_01.jpg")
+              .content
+                .title                   
+                  img.icon(src="./imgs/event/icons/event_content_icon.png")
+                  h4 活动详情：
+
+                .text 即日起多乐娱乐城的会员们在指定日期（星期三与星期日）累计存款达到200元（申请过≥80%活动的存款金额不计算在内）后，当日即可申请以小博大三连存活动，申请该活动出款后则不再享受后续以小博大活动，再下一指定日期还可继续申请。
+
+                .title                   
+                  img.icon(src="./imgs/event/icons/event_mode_icon.png")
+                  h4 申请方式：
+
+                .text 在指定日期会员达到活动要求后即可联系在线客服申请。
+
+                .title                   
+                  img.icon(src="./imgs/event/icons/event_limit_icon.png")
+                  h4 活动限制：
+
+                .text
+                  ul
+                    li 申请该活动后出款时，超出提款上限的金额将会清零。
+                    li 本活动不与其他存送活动共享。（公司入款优惠除外）
+                    li 此奖金仅限投注电子老虎机游戏（PT/MG/TTG/DT/BS），有效投注不包括PT老虎机游戏超级蓝（GREAT BLUE），活动有效投注规则适用于此优惠。
+                    li 一般活动条款与规则适用于此优惠。
+                    li 【多乐娱乐】拥有活动最终解释权。
+
+
+
+      include ./layout/footer.pug
+
+
+      include ./layout/fix_service.pug
+
+
+
+
+
+    include ./layout/common_scripts.pug
+
+    //- script(src='./lib/malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.concat.min.js')
+    script.
+      $(document).ready(function(){
+        baseCtrl();
+
+        //add menu active
+        $('#tMenu>li:nth-child(7)').addClass('active');
+
+        //- $(".e_body>.content").mCustomScrollbar({
+        //-     theme:"cGreen",
+        //-     axis:"y"
+        //- });
+
+
+
+
+      });//end of document ready
+

@@ -1,0 +1,150 @@
+@import 'layout/_includes.sass'
+
+.main
+  .wrap
+    position: relative
+    background: url(../imgs/VIP/vip_bg.jpg) no-repeat
+    background-size: cover
+
+    .dec,.content
+      display: inline-block
+      vertical-align: middle
+      
+      padding-bottom: 20px
+    .dec
+      width: percentage(450px/1920px)
+      min-width: 400px
+      margin-left: percentage(360px/1920px)
+      padding-top: 150px
+
+    .content
+      // background-color: rgba(#0cc,0.2)
+      width: percentage(750px/1920px)
+      margin-left: percentage(10px/1920px)
+      min-height: 1000px
+      padding-top: 220px
+
+      .vip_tab
+
+        ul
+          border: none
+          li
+            width: 148px
+            height: 66px
+            background-color: transparent
+            a
+              width: 100%
+              height: 100%
+            a, a:focus, a:hover,&.active>a,&.active>a:focus, &.active>a:hover
+              background-color: transparent
+              border: none
+
+          .tab_rules
+            background: url(../imgs/VIP/vip_menu_term_n.png) no-repeat
+            margin-right: 25px
+            &.active
+              background: url(../imgs/VIP/vip_menu_term_s.png) no-repeat
+          .tab_grades
+            background: url(../imgs/VIP/vip_menu_custom_n.png) no-repeat
+            &.active
+              background: url(../imgs/VIP/vip_menu_custom_s.png) no-repeat
+
+      .vip_content
+        margin-top: 30px
+        .vip_table
+          background-color: rgba(#63513f, 0.3)
+          text-align: center
+          thead
+            color: #f3e8c2
+            background-color: #63513f
+            border: 1px solid #63513f
+            
+
+          tbody
+            color: #d9cda6
+            font-size: $font_size_base
+            letter-spacing: 1.1px
+            tr
+              td
+                border: 1px solid #63513f
+
+
+        .rules
+          thead
+            font-size: $font_size_Llarge
+            tr
+              td
+                padding: 15px 0
+          tbody
+            tr
+              td
+                height: 54px
+                padding: 10px 0
+                // border: 1px solid #63513f
+                &:nth-of-type(1)
+                  width: 143px
+                  letter-spacing: 0.8px
+                &:nth-of-type(2)
+                  width: 325px
+                &:nth-of-type(3)
+                  width: 247px
+                  letter-spacing: 0.8px
+
+                ul
+                  text-align: left
+                  font-size: $font_size_s
+                  width: 260px
+                  margin: auto
+                  li
+                    letter-spacing: 0.7px
+                    &:nth-of-type(1), &:nth-of-type(2)
+                      display: inline-block
+                    &:nth-of-type(2)
+                      margin-left: 15px
+                    &:nth-of-type(3)
+                      margin-top: 10px
+
+                    .c
+                      color: #fff
+                    .s
+                      color: #ffd737
+          ~.tips
+            max-width: 670px
+        .grades
+          tr
+           td
+            padding: 7px 0
+            border: 1px solid #6c5640
+            font-size: $font_size_s
+            width: percentage(55px/750px)
+            &:nth-of-type(1)
+              width: percentage(80px/750px)
+            &:nth-of-type(2)
+              width: percentage(45px/750px)
+
+          thead
+            tr
+              td
+                line-height: 1.3
+
+          tbody
+            tr
+              td
+                padding: 10px 0
+
+        .tips
+          color: #ae9c84
+          max-width: 715px
+          margin-top: 25px
+          .title
+            font-size: $font_size_Llarge
+            letter-spacing: 1.4px
+            margin-bottom: 10px
+          ul
+            li
+              font-size: $font_size_s
+              letter-spacing: 1px
+              line-height: 1.8
+
+
+

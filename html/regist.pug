@@ -1,0 +1,91 @@
+extends ./layout/head.pug
+append page_head
+  link(rel="stylesheet" href="./css/regist.css")
+
+
+block body
+  body
+    .wrapper
+      include ./layout/full_header.pug
+
+      .main
+        .warp
+          .dec_wrap.box1
+            img.decs.b1dec1(src="imgs/member/member_img_01.png", alt="")
+            img.decs.b1dec2(src="imgs/member/member_img_02.png", alt="")
+            img.decs.b1dec3(src="imgs/member/member_img_03.png", alt="")
+          .content.box1
+            form()
+              ul.regist
+                li
+                  span.title 账户名
+                  span
+                    input.bg1(type="text")
+                  p.error 账户名不合法
+                li
+                  span.title 密码
+                  span
+                    input.bg2(type="password")
+                  p
+                li
+                  span.title 确认密码
+                  span
+                    input.bg3(type="password")
+                  p
+                li
+                  span.title 手机号码
+                  span
+                    input.bg4(type="text")
+                  p 
+                li.get_code
+                  span.title 验证码
+                  span
+                    input.bg5(type="text")
+                  img.code_pic(src="imgs/member/member_GetCode_img.jpg", alt="")
+                  p
+                li.check
+                  label
+                    input(type="radio")
+                    span.indicator
+                    span 我确认我是18岁或以上,已阅读并接受 
+                li
+                  .btn.regist_btn 立即注册
+          .clearfix
+
+        .wrap
+          .dec_wrap.box2
+            img.decs.b2dec1(src="imgs/member/member_img_04.png", alt="")
+            img.decs.b2dec2(src="imgs/member/member_img_05.png", alt="")
+            img.decs.b2dec3(src="imgs/member/member_img_06.png", alt="")
+
+          .content.box2
+            .top
+              img.decs.b2dec4(src="imgs/member/member_img_07.png", alt="")
+            .middle
+              a(href="javascript:;")
+                img.decs.b2dec4(src="imgs/member/btn/member_personal_btn.png", alt="")
+              a(href="javascript:;")
+                img.decs.b2dec4(src="imgs/member/btn/member_save_money_btn.png", alt="")
+              a(href="javascript:;")
+                img.decs.b2dec4(src="imgs/member/btn/member_vip_club_btn.png", alt="")
+            .bottom
+              p 如果您是新手，请
+                a.g_f_color(href="javascript:;") 点击进入新手指导
+              p 多乐娱乐城，有您更精彩！
+          .clearfix
+
+      include ./layout/footer.pug
+
+      include ./layout/fix_service.pug
+
+
+    include ./layout/common_scripts.pug
+    script.
+      $(document).ready(function(){
+        baseCtrl();
+
+        //add menu active
+        //- $('#tMenu>li:nth-child(6)').addClass('active');
+
+      });//end of document ready
+

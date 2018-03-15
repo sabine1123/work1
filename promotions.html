@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./lib/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./lib/Swiper-master/css/swiper.css">
+    <link rel="stylesheet" href="./css/common.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="./css/popup.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="./css/promotions.css">
+    <script src="./lib/jquery/jquery-3.2.1.min.js"></script>
+    <title>多乐</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="full_header">
+        <div class="mem_bar">
+          <div class="box">
+            <div class="pull-left left"><span>GMT+08:00 2017-10-09 18:42:39</span></div>
+            <div class="pull-right right">
+              <div class="off_login">
+                <div class="form"><span class="title">账号</span>
+                  <input class="input_middle input_fill_dark" type="text">
+                </div>
+                <div class="form"><span class="title">密码</span>
+                  <input class="input_middle input_fill_dark" type="password">
+                </div>
+                <div class="btn btn_fill_green btn_small"> <a href="javascript:;">登录</a></div><a class="forget" href="javascript:;">忘记密码？</a>
+                <div class="btn btn_fill_gray btn_small"><a href="javascript:;">注册</a></div>
+              </div>
+              <div class="on_login"><span class="greetings">您好，<span class="font_yellow">flashtest</span></span>
+                <div class="balance" id="tbal">
+                  <div class="num">¥300<span class="font_sub">.22</span></div>
+                  <div class="reload"><img src="./imgs/common/icons/hd_reload_icon.png" alt=""></div>
+                </div>
+                <div class="switch on">
+                  <div class="toggle"></div>
+                </div>
+                <div class="member">
+                  <ul>
+                    <li> <a href="./member_deposit.html">充值</a></li>
+                    <li> <a href="./member_trnsfer.html">转帐</a></li>
+                    <li><a href="./member_withdraw.html">取款</a></li>
+                    <li><a href="./member_deposit.html">个人中心</a></li>
+                    <li>
+                      <div class="btn btn_fill_gray btn_small"> <a href="javascript:;">登出</a></div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+        <nav>
+          <div class="box">
+            <div class="pull-left left"><a href="javascript:;"><img src="./imgs/common/logo.png" alt=""></a></div>
+            <div class="pull-left right">
+              <ul class="menu" id="tMenu">
+                <li><a href="./index.html"><img src="./imgs/common/icons/home_icon.png" alt=""><span class="title">首页</span></a></li>
+                <li><a href="./slot.html"><img src="./imgs/common/icons/slot_icon.png" alt=""><span class="title">老虎机</span></a></li>
+                <li><a href="./live.html"><img src="./imgs/common/icons/menu_live_icon.png" alt=""><span class="title">真人</span></a></li>
+                <li><a href="./sports.html"><img src="./imgs/common/icons/menu_sport_icon.png" alt=""><span class="title">体育</span></a></li>
+                <li><a href="javascript:;"><img src="./imgs/common/icons/menu_lotto_icon.png" alt=""><span class="title">彩票</span></a></li>
+                <li><a href="./fishing.html"><img src="./imgs/common/icons/menu_fishing_icon.png" alt=""><span class="title">补鱼</span></a></li>
+                <li><a href="./promotions.html"><img src="./imgs/common/icons/menu_event_icon.png" alt=""><span class="title">优惠</span></a></li>
+                <li><a href="./vip.html"><img src="./imgs/common/icons/menu_club_icon.png" alt=""><span class="title">俱乐部</span></a></li>
+              </ul>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+        </nav>
+      </header>
+      <div class="main">
+        <section class="full_banner"><img src="./imgs/event/banner/event_banner_01.jpg" alt=""></section>
+        <section class="content">
+          <div class="event_menu">
+            <div class="box">
+              <div class="menu c_tab" role="tabpanel">
+                <ul class="nav nav-tabs" role="tablist">
+                  <li class="active" role="presentation"><a href="#all" aria-controls="all" role="tab" data-toggle="tab">全部优惠</a></li>
+                  <li role="presentation"><a href="#slot" aria-controls="slot" role="tab" data-toggle="tab">老虎机优惠</a></li>
+                  <li role="presentation"><a href="#live" aria-controls="live" role="tab" data-toggle="tab">真人优惠  </a></li>
+                  <li role="presentation"><a href="#sport" aria-controls="sport" role="tab" data-toggle="tab">体育优惠</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="event_wrap">
+            <div class="box">
+              <div class="event_list">
+                <div class="tab-content">
+                  <div class="tab-pane active" role="tabpanel" id="all"> 
+                    <ul class="event_box">
+                      <li class="upcoming" data-toggle="modal" data-target="#event1">
+                        <div class="event"><img class="event_img" src="./imgs/event/event_img_01.jpg" alt="">
+                          <div class="info">
+                            <div class="head"><span class="title">以小博大3连存</span><span class="pull-right sub_title">敬请期待</span>
+                              <div class="clearfix"></div>
+                            </div>
+                            <div class="middle">即日起多乐娱乐城的会员们在指定日期（星期三与星期日）累计存款达到200元后，当日即可申请以小博大三连存</div>
+                            <div class="bottom">
+                              <div class="time">07-28 00:00:00 至 02-18 23:59:59</div>
+                              <div class="pull-right icon"><img src="./imgs/event/btn/event_next_btn.png" alt=""></div>
+                              <div class="clearfix"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <li class="running">
+                          <div class="event"><img class="event_img" src="./imgs/event/event_img_02.jpg" alt="">
+                            <div class="info">
+                              <div class="head"><span class="title">全民来打虎</span><span class="pull-right sub_title">火热进行中</span>
+                                <div class="clearfix"></div>
+                              </div>
+                              <div class="middle">即日起多乐娱乐城的会员们在指定日期（星期三与星期日）累计存款达到200元后，当日即可申请以小博大三连存</div>
+                              <div class="bottom">
+                                <div class="time">07-28 00:00:00 至 02-18 23:59:59</div>
+                                <div class="pull-right icon"><img src="./imgs/event/btn/event_next_btn.png" alt=""></div>
+                                <div class="clearfix"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="running">
+                          <div class="event"><img class="event_img" src="./imgs/event/event_img_03.jpg" alt="">
+                            <div class="info">
+                              <div class="head"><span class="title">以小博大3连存</span><span class="pull-right sub_title">火热进行中</span>
+                                <div class="clearfix"></div>
+                              </div>
+                              <div class="middle">即日起多乐娱乐城的会员们在指定日期（星期三与星期日）累计存款达到200元后，当日即可申请以小博大三连存</div>
+                              <div class="bottom">
+                                <div class="time">07-28 00:00:00 至 02-18 23:59:59</div>
+                                <div class="pull-right icon"><img src="./imgs/event/btn/event_next_btn.png" alt=""></div>
+                                <div class="clearfix"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="running">
+                          <div class="event"><img class="event_img" src="./imgs/event/event_img_04.jpg" alt="">
+                            <div class="info">
+                              <div class="head"><span class="title">以小博大3连存</span><span class="pull-right sub_title">火热进行中</span>
+                                <div class="clearfix"></div>
+                              </div>
+                              <div class="middle">即日起多乐娱乐城的会员们在指定日期（星期三与星期日）累计存款达到200元后，当日即可申请以小博大三连存</div>
+                              <div class="bottom">
+                                <div class="time">07-28 00:00:00 至 02-18 23:59:59</div>
+                                <div class="pull-right icon"><img src="./imgs/event/btn/event_next_btn.png" alt=""></div>
+                                <div class="clearfix"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="running">
+                          <div class="event"><img class="event_img" src="./imgs/event/event_img_05.jpg" alt="">
+                            <div class="info">
+                              <div class="head"><span class="title">以小博大3连存</span><span class="pull-right sub_title">火热进行中</span>
+                                <div class="clearfix"></div>
+                              </div>
+                              <div class="middle">即日起多乐娱乐城的会员们在指定日期（星期三与星期日）累计存款达到200元后，当日即可申请以小博大三连存</div>
+                              <div class="bottom">
+                                <div class="time">07-28 00:00:00 至 02-18 23:59:59</div>
+                                <div class="pull-right icon"><img src="./imgs/event/btn/event_next_btn.png" alt=""></div>
+                                <div class="clearfix"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="running">
+                          <div class="event"><img class="event_img" src="./imgs/event/event_img_02.jpg" alt="">
+                            <div class="info">
+                              <div class="head"><span class="title">以小博大3连存</span><span class="pull-right sub_title">火热进行中</span>
+                                <div class="clearfix"></div>
+                              </div>
+                              <div class="middle">即日起多乐娱乐城的会员们在指定日期（星期三与星期日）累计存款达到200元后，当日即可申请以小博大三连存</div>
+                              <div class="bottom">
+                                <div class="time">07-28 00:00:00 至 02-18 23:59:59</div>
+                                <div class="pull-right icon"><img src="./imgs/event/btn/event_next_btn.png" alt=""></div>
+                                <div class="clearfix"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="finished">
+                          <div class="event"><img class="event_img" src="./imgs/event/event_img_03.jpg" alt="">
+                            <div class="info">
+                              <div class="head"><span class="title">以小博大3连存</span><span class="pull-right sub_title">已结束</span>
+                                <div class="clearfix"></div>
+                              </div>
+                              <div class="middle">即日起多乐娱乐城的会员们在指定日期（星期三与星期日）累计存款达到200元后，当日即可申请以小博大三连存</div>
+                              <div class="bottom">
+                                <div class="time">07-28 00:00:00 至 02-18 23:59:59</div>
+                                <div class="pull-right icon"><img src="./imgs/event/btn/event_next_btn.png" alt=""></div>
+                                <div class="clearfix"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="finished">
+                          <div class="event"><img class="event_img" src="./imgs/event/event_img_01.jpg" alt="">
+                            <div class="info">
+                              <div class="head"><span class="title">以小博大3连存</span><span class="pull-right sub_title">已结束</span>
+                                <div class="clearfix"></div>
+                              </div>
+                              <div class="middle">即日起多乐娱乐城的会员们在指定日期（星期三与星期日）累计存款达到200元后，当日即可申请以小博大三连存</div>
+                              <div class="bottom">
+                                <div class="time">07-28 00:00:00 至 02-18 23:59:59</div>
+                                <div class="pull-right icon"><img src="./imgs/event/btn/event_next_btn.png" alt=""></div>
+                                <div class="clearfix"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="tab-pane" role="tabpanel" id="slot">老虎机优惠</div>
+                  <div class="tab-pane" role="tabpanel" id="live">真人优惠</div>
+                  <div class="tab-pane" role="tabpanel" id="sport">体育优惠</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div><!--popup-->
+      <div class="modal popup_event" id="event1" data-backdrop="static">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <button class="close close_btn" data-dismiss="modal" aria-hidden="true"><img src="./imgs/event/btn/event_close_btn.png"></button>
+            <div class="e_body"> 
+              <div class="banner"><img src="./imgs/event/pop_img_01.jpg"></div>
+              <div class="content">
+                <div class="title">                  <img class="icon" src="./imgs/event/icons/event_content_icon.png">
+                  <h4>活动详情：</h4>
+                </div>
+                <div class="text">即日起多乐娱乐城的会员们在指定日期（星期三与星期日）累计存款达到200元（申请过≥80%活动的存款金额不计算在内）后，当日即可申请以小博大三连存活动，申请该活动出款后则不再享受后续以小博大活动，再下一指定日期还可继续申请。</div>
+                <div class="title">                  <img class="icon" src="./imgs/event/icons/event_mode_icon.png">
+                  <h4>申请方式：</h4>
+                </div>
+                <div class="text">在指定日期会员达到活动要求后即可联系在线客服申请。</div>
+                <div class="title">                  <img class="icon" src="./imgs/event/icons/event_limit_icon.png">
+                  <h4>活动限制：</h4>
+                </div>
+                <div class="text">
+                  <ul>
+                    <li>申请该活动后出款时，超出提款上限的金额将会清零。</li>
+                    <li>本活动不与其他存送活动共享。（公司入款优惠除外）</li>
+                    <li>此奖金仅限投注电子老虎机游戏（PT/MG/TTG/DT/BS），有效投注不包括PT老虎机游戏超级蓝（GREAT BLUE），活动有效投注规则适用于此优惠。</li>
+                    <li>一般活动条款与规则适用于此优惠。</li>
+                    <li>【多乐娱乐】拥有活动最终解释权。</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="box container-fluid">
+          <div class="row">
+            <div class="col-md-4 col-lg-4">
+              <div class="row">
+                <div class="left">
+                  <div class="sub_wrap">
+                    <div class="title"><img src="imgs/common/footer_Service_img.jpg" alt=""></div>
+                    <div class="content sec">
+                      <div class="title">
+                        <div class="pull-left text">
+                          <h4>存款到账</h4><span class="sub_title">平均时间</span>
+                        </div>
+                        <div class="pull-right time"><span class="num">24</span><span class="unit">秒</span></div>
+                        <div class="clearfix"></div>
+                      </div>
+                      <div class="con">
+                        <div class="bar"></div>
+                      </div>
+                    </div>
+                    <div class="content min">
+                      <div class="title">
+                        <div class="pull-left text">
+                          <h4>取款到账</h4><span class="sub_title">平均时间</span>
+                        </div>
+                        <div class="pull-right time"><span class="num">2'15</span><span class="unit">分</span></div>
+                        <div class="clearfix"></div>
+                      </div>
+                      <div class="con">
+                        <div class="bar"></div>
+                      </div>
+                    </div>
+                    <div class="content place">
+                      <div class="pull-left text">
+                        <h4>便捷的银行服务					</h4><img src="imgs/common/footer_bank_img.jpg" alt=""><span class="sub_title">目前支持的支付机构</span>
+                      </div>
+                      <div class="pull-right time"><span class="num">40</span><span class="unit">家</span></div>
+                      <div class="clearfix"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-lg-4">
+              <div class="row">
+                <div class="middle">
+                  <div class="title"><img src="imgs/common/footer_partners_img.jpg" alt=""></div>
+                  <ul class="partners">
+                    <li><img src="imgs/common/footer_PT_img.jpg" alt=""></li>
+                    <li><img src="imgs/common/footer_MG_img.jpg" alt=""></li>
+                    <li><img src="imgs/common/footer_TOP_img.jpg" alt=""></li>
+                    <li><img src="imgs/common/footer_PlayGO_img.jpg" alt=""></li>
+                    <li><img src="imgs/common/footer_GamesOS_img.jpg" alt=""></li>
+                  </ul>
+                  <ul class="partners">
+                    <li><img src="imgs/common/footer_AG_img.jpg" alt=""></li>
+                    <li><img src="imgs/common/footer_BBIN_img.jpg" alt=""></li>
+                    <li><img src="imgs/common/footer_BET_img.jpg" alt=""></li>
+                    <li><img src="imgs/common/footer_NYX_img.jpg" alt=""></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-lg-4">
+              <div class="row">
+                <div class="right">
+                  <div class="title"><img src="imgs/common/footer_help_img.jpg" alt=""></div>
+                  <div class="footer_menu">
+                    <div class="content">
+                      <ul>
+                        <li><a href="javascript:;"><img src="imgs/index/icons/index_next_icon.jpg" alt="">代理加盟</a></li>
+                        <li><a href="javascript:;"><img src="imgs/index/icons/index_next_icon.jpg" alt="">常见问题 </a></li>
+                        <li><a href="javascript:;"><img src="imgs/index/icons/index_next_icon.jpg" alt="">联系我们</a></li>
+                      </ul>
+                      <ul>
+                        <li><a href="javascript:;"><img src="imgs/index/icons/index_next_icon.jpg" alt="">隐私策略</a></li>
+                        <li><a href="javascript:;"><img src="imgs/index/icons/index_next_icon.jpg" alt="">责任条款</a></li>
+                        <li><a href="javascript:;"><img src="imgs/index/icons/index_next_icon.jpg" alt="">服务条款</a></li>
+                      </ul>
+                    </div>
+                    <div class="content">乐娱乐城持有菲律宾政府PAGCOR博彩牌照且受其监管</div>
+                    <div class="content"><span>电话: 0063-906-2667-666 </span><span>QQ: 9257868</span></div>
+                    <div class="content"><span>Copyright © 2016 多乐娱乐国际控股</span><span>更多精彩 尽在多乐娱乐城</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="fix_service">
+        <ul>
+          <li><a href="javascript:;"><img src="imgs/common/icons/aside_service_icon.png" alt=""><span>在线客服</span></a></li>
+          <li><a href="javascript:;"><img src="imgs/common/icons/weChat_icon.png" alt=""><span>微信扫码</span></a></li>
+          <li><a href="javascript:;"><img src="imgs/common/icons/aside_club_icon.png" alt=""><span>俱乐部</span></a></li>
+          <li><a href="javascript:;"><img src="imgs/common/icons/aside_down_icon.png" alt=""><span>下载中心</span></a></li>
+          <li><a href="javascript:;"><img src="imgs/common/icons/aside_problem_icon.png" alt=""><span>常见问题</span></a></li>
+          <li class="top" id="gotop"><img src="imgs/common/icons/top_icon.png" alt=""></li>
+        </ul>
+      </div>
+    </div>
+    <script src="./lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="./lib/Swiper-master/js/swiper.min.js"></script>
+    <script src="./lib/jquery.blockUI.js"></script>
+    <script src="./js/base.js"></script>
+    <script src="./js/object.js"></script>
+    <script>
+      $(document).ready(function(){
+        baseCtrl();
+      
+        //add menu active
+        $('#tMenu>li:nth-child(7)').addClass('active');
+      
+        //- $(".e_body>.content").mCustomScrollbar({
+        //-     theme:"cGreen",
+        //-     axis:"y"
+        //- });
+      
+      
+      
+      
+      });//end of document ready
+    </script>
+  </body>
+</html>

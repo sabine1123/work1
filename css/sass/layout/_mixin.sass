@@ -1,0 +1,38 @@
+@mixin tab($active,$active_bg,$padding:10px 20px)
+  .nav-tabs
+    border-bottom: 1px solid transparent
+  .nav-tabs
+    li.active
+      color: $active
+  .nav>li>a
+    width: 100%
+    padding: $padding
+    border: none
+  .nav>li>a:focus, .nav>li>a:hover
+    background-color: $active_bg
+  .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover
+    color: inherit
+    border: none
+    background-color: $active_bg
+  
+  .nav
+    li.more
+      >a
+        &:hover
+        background-color: transparent
+
+@mixin bablock
+  content: ''
+  display: block
+
+
+@mixin btn_fill($bg,$color)
+  background-color: $bg
+  color: $color
+  &:hover, &:focus, &:active
+    color: $color
+
+
+@mixin laptop
+  @media screen and(max-width: 1366px)
+    @content

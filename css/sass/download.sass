@@ -1,0 +1,194 @@
+@import 'layout/_includes.sass'
+
+.c_tab
+  +tab(#000,#f2f7f3,16px 30px)
+
+.main
+  .content
+    background-color: #f2f7f3
+    .download_menu
+      background-color: #fff
+      .menu
+        color: #5a5c59
+        font-size: $font_size_large
+        letter-spacing: 1px
+        background-color: #fff
+        font-weight: bold
+
+        .icon_a
+          a
+            padding: 7px 15px
+        .no_hover
+          a
+            &:focus, &:hover
+              background-color: inherit
+
+    .download_list
+      padding: 31px 0 76px
+      .download_box
+        width: 390px
+        text-align: center
+        display: inline-block
+        vertical-align: top
+        margin-right: 11px
+        &:nth-of-type(3)
+          margin-right: 0px
+        .top
+          height: 160px
+        .bg_green
+          background-color: #d4efa6
+        .bg_yellow
+          background-color: #f2e4a0
+        .bg_violet
+          background-color: #ccdded
+        .bg_pink
+          background-color: #fbcfea
+        .bg_sky
+          background-color: #bcf2f1
+
+        .bottom
+          background-color: #fff
+          height: 448px
+          color: #323436
+          padding-top: 37px
+          font-size: $font_size_base
+
+          .s_f_color
+            color: #f2851a
+          .w_f_color
+            color: #6d6464
+          .qr
+            margin: 15px auto
+
+          .s_f_size
+            font-size: $font_size_s
+
+          .mr_t
+            margin-top: 16px
+          .mr_t_b
+            margin: 16px auto 36px auto
+          .mr_t_btn
+            margin-top: 168px
+
+
+          .no_qr_text
+            font-size: 1.375rem
+            color: #565d57
+            line-height: 1.64
+            letter-spacing: 1.8px
+            margin-top: 73px
+
+
+
+
+
+        &.duole
+          .mr_t_b
+            margin: 24px auto 16px auto
+          .mr_t
+            margin-top: 16px
+          .mr_t_btn
+            margin-top: 140px
+
+        .help
+          cursor: pointer
+
+        &.browser
+          .top
+            position: relative
+            >img
+             position: absolute
+             top: 67px
+             left: 115px
+          .bottom
+            padding-top: 147px
+            color: #6d6464
+            .title
+              font-size: $font_size_large
+              line-height: 1.22
+              letter-spacing: 1.8px
+            .sub_title
+              font-size: $font_size_s
+              line-height: 1.83
+              letter-spacing: 10.6px
+            .btn_download
+              margin-top: 163px
+
+      .help_box
+        width: 100%
+        height: 608px
+        background-color: #fff
+        position: relative
+        text-align: center
+        .close_help
+          position: absolute
+          top: 33px
+          right: 64px
+          cursor: pointer
+        .left, .right
+          display: inline-block
+          vertical-align: top
+
+        .left
+          img
+            display: block
+          
+        .s
+          color: #e16d06
+        .g
+          color: #109632
+
+        .right
+          color: #585d59
+          letter-spacing: 1.4px
+          line-height: 1.5
+          text-align: left
+          .text
+            &:nth-of-type(1)
+              margin-bottom: 88px
+
+        &.help1
+          padding-top: 133px
+          .right
+            margin-left: 37px
+
+
+        &.help2
+          padding-top: 104px
+          .right
+            margin-left: 57px
+          .bottom
+            margin-top: 44px
+
+        &.help3
+          padding-top: 160px
+          ul
+            display: inline-block
+            &:nth-of-type(1)
+              margin-right: 38px
+            li
+              margin-bottom: 47px
+              .pics, .text
+                display: inline-block
+                vertical-align: top
+              .text
+                width: 375px
+                line-height: 1.5
+                letter-spacing: 1.4px
+                text-align: left
+                margin-left: 16px
+
+
+
+      .btn_download
+        width: 133px
+        height: 49px
+        line-height: 49px
+        border-radius: 50px
+        font-size: $font_size_Llarge
+        border: 1px solid #b6bdb9
+        color: #6d6464
+        background-color: #fff
+        &:hover, &:focus, &:active
+          color: #6d6464
+

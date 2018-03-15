@@ -1,0 +1,62 @@
+@import '_variables.sass'
+@import '_mixin.sass'
+// bs
+.btn
+	background-image: none
+	background-repeat: no-repeat
+	border: none
+	text-shadow: none
+	border-radius: 2px
+	padding: 0
+
+
+// customization
+.btn_fill_green
+	background-color: $btn_green
+	color: #fff
+	&:hover, &:focus, &:active
+		color: #fff
+
+.btn_fill_gray
+	background-color: $btn_gray
+	color: #fff
+	&:hover, &:focus, &:active
+		color: #fff
+
+
+// 11/29 add
+.btn_fill_light_gray
+	+btn_fill($btn_light_gray,#fff)
+	border-radius: 4px
+.btn_fill_orange
+	+btn_fill($btn_orange,#fff)
+	border-radius: 4px
+
+.btn_empty_green
+	border: 1px solid $btn_green
+	color: $btn_green
+	background-color: #fff
+	&:hover, &:focus, &:active
+		color: $btn_green
+.btn_empty_gray
+	border: 1px solid #c2c7c3
+	color: #c8d0cf
+	background-color: #fff
+	&:hover, &:focus, &:active
+		color: #c8d0cf
+
+//after 11/22 add
+.btn_small
+	width: 71px
+	height: 31px
+	line-height: 31px
+
+.btn_medium
+	width: 102px
+	height: 41px
+	line-height: 41px
+
+// .btn-group>.btn-group:last-child:not(:first-child)>.btn:first-child,
+// .btn-group>.btn-group:first-child:not(:last-child)>.btn:last-child, 
+// .btn-group>.btn-group:first-child:not(:last-child)>.dropdown-toggle			
+// 	border-radius: 3px

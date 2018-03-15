@@ -1,0 +1,250 @@
+.btn {
+  background-image: none;
+  background-repeat: no-repeat;
+  border: none;
+  text-shadow: none;
+  border-radius: 2px;
+  padding: 0; }
+
+.btn_fill_green {
+  background-color: #168849;
+  color: #fff; }
+  .btn_fill_green:hover, .btn_fill_green:focus, .btn_fill_green:active {
+    color: #fff; }
+
+.btn_fill_gray {
+  background-color: #676f6a;
+  color: #fff; }
+  .btn_fill_gray:hover, .btn_fill_gray:focus, .btn_fill_gray:active {
+    color: #fff; }
+
+.btn_fill_light_gray {
+  background-color: #b2ada7;
+  color: #fff;
+  border-radius: 4px; }
+  .btn_fill_light_gray:hover, .btn_fill_light_gray:focus, .btn_fill_light_gray:active {
+    color: #fff; }
+
+.btn_fill_orange {
+  background-color: #e69016;
+  color: #fff;
+  border-radius: 4px; }
+  .btn_fill_orange:hover, .btn_fill_orange:focus, .btn_fill_orange:active {
+    color: #fff; }
+
+.btn_empty_green {
+  border: 1px solid #168849;
+  color: #168849;
+  background-color: #fff; }
+  .btn_empty_green:hover, .btn_empty_green:focus, .btn_empty_green:active {
+    color: #168849; }
+
+.btn_empty_gray {
+  border: 1px solid #c2c7c3;
+  color: #c8d0cf;
+  background-color: #fff; }
+  .btn_empty_gray:hover, .btn_empty_gray:focus, .btn_empty_gray:active {
+    color: #c8d0cf; }
+
+.btn_small {
+  width: 71px;
+  height: 31px;
+  line-height: 31px; }
+
+.btn_medium {
+  width: 102px;
+  height: 41px;
+  line-height: 41px; }
+
+@-webkit-keyframes updown {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+  100% {
+    -webkit-transform: translateY(5px);
+    transform: translateY(5px); } }
+
+@keyframes updown {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+  100% {
+    -webkit-transform: translateY(5px);
+    transform: translateY(5px); } }
+
+.c_tab .nav-tabs {
+  border-bottom: 1px solid transparent; }
+
+.c_tab .nav-tabs li.active {
+  color: #000; }
+
+.c_tab .nav > li > a {
+  width: 100%;
+  padding: 16px 30px;
+  border: none; }
+
+.c_tab .nav > li > a:focus, .c_tab .nav > li > a:hover {
+  background-color: #f2f7f3; }
+
+.c_tab .nav-tabs > li.active > a, .c_tab .nav-tabs > li.active > a:focus, .c_tab .nav-tabs > li.active > a:hover {
+  color: inherit;
+  border: none;
+  background-color: #f2f7f3; }
+
+.c_tab .nav li.more > a {
+  background-color: transparent; }
+
+.main .content {
+  background-color: #f2f7f3; }
+  .main .content .download_menu {
+    background-color: #fff; }
+    .main .content .download_menu .menu {
+      color: #5a5c59;
+      font-size: 1rem;
+      letter-spacing: 1px;
+      background-color: #fff;
+      font-weight: bold; }
+      .main .content .download_menu .menu .icon_a a {
+        padding: 7px 15px; }
+      .main .content .download_menu .menu .no_hover a:focus, .main .content .download_menu .menu .no_hover a:hover {
+        background-color: inherit; }
+  .main .content .download_list {
+    padding: 31px 0 76px; }
+    .main .content .download_list .download_box {
+      width: 390px;
+      text-align: center;
+      display: inline-block;
+      vertical-align: top;
+      margin-right: 11px; }
+      .main .content .download_list .download_box:nth-of-type(3) {
+        margin-right: 0px; }
+      .main .content .download_list .download_box .top {
+        height: 160px; }
+      .main .content .download_list .download_box .bg_green {
+        background-color: #d4efa6; }
+      .main .content .download_list .download_box .bg_yellow {
+        background-color: #f2e4a0; }
+      .main .content .download_list .download_box .bg_violet {
+        background-color: #ccdded; }
+      .main .content .download_list .download_box .bg_pink {
+        background-color: #fbcfea; }
+      .main .content .download_list .download_box .bg_sky {
+        background-color: #bcf2f1; }
+      .main .content .download_list .download_box .bottom {
+        background-color: #fff;
+        height: 448px;
+        color: #323436;
+        padding-top: 37px;
+        font-size: 0.875rem; }
+        .main .content .download_list .download_box .bottom .s_f_color {
+          color: #f2851a; }
+        .main .content .download_list .download_box .bottom .w_f_color {
+          color: #6d6464; }
+        .main .content .download_list .download_box .bottom .qr {
+          margin: 15px auto; }
+        .main .content .download_list .download_box .bottom .s_f_size {
+          font-size: 0.75rem; }
+        .main .content .download_list .download_box .bottom .mr_t {
+          margin-top: 16px; }
+        .main .content .download_list .download_box .bottom .mr_t_b {
+          margin: 16px auto 36px auto; }
+        .main .content .download_list .download_box .bottom .mr_t_btn {
+          margin-top: 168px; }
+        .main .content .download_list .download_box .bottom .no_qr_text {
+          font-size: 1.375rem;
+          color: #565d57;
+          line-height: 1.64;
+          letter-spacing: 1.8px;
+          margin-top: 73px; }
+      .main .content .download_list .download_box.duole .mr_t_b {
+        margin: 24px auto 16px auto; }
+      .main .content .download_list .download_box.duole .mr_t {
+        margin-top: 16px; }
+      .main .content .download_list .download_box.duole .mr_t_btn {
+        margin-top: 140px; }
+      .main .content .download_list .download_box .help {
+        cursor: pointer; }
+      .main .content .download_list .download_box.browser .top {
+        position: relative; }
+        .main .content .download_list .download_box.browser .top > img {
+          position: absolute;
+          top: 67px;
+          left: 115px; }
+      .main .content .download_list .download_box.browser .bottom {
+        padding-top: 147px;
+        color: #6d6464; }
+        .main .content .download_list .download_box.browser .bottom .title {
+          font-size: 1rem;
+          line-height: 1.22;
+          letter-spacing: 1.8px; }
+        .main .content .download_list .download_box.browser .bottom .sub_title {
+          font-size: 0.75rem;
+          line-height: 1.83;
+          letter-spacing: 10.6px; }
+        .main .content .download_list .download_box.browser .bottom .btn_download {
+          margin-top: 163px; }
+    .main .content .download_list .help_box {
+      width: 100%;
+      height: 608px;
+      background-color: #fff;
+      position: relative;
+      text-align: center; }
+      .main .content .download_list .help_box .close_help {
+        position: absolute;
+        top: 33px;
+        right: 64px;
+        cursor: pointer; }
+      .main .content .download_list .help_box .left, .main .content .download_list .help_box .right {
+        display: inline-block;
+        vertical-align: top; }
+      .main .content .download_list .help_box .left img {
+        display: block; }
+      .main .content .download_list .help_box .s {
+        color: #e16d06; }
+      .main .content .download_list .help_box .g {
+        color: #109632; }
+      .main .content .download_list .help_box .right {
+        color: #585d59;
+        letter-spacing: 1.4px;
+        line-height: 1.5;
+        text-align: left; }
+        .main .content .download_list .help_box .right .text:nth-of-type(1) {
+          margin-bottom: 88px; }
+      .main .content .download_list .help_box.help1 {
+        padding-top: 133px; }
+        .main .content .download_list .help_box.help1 .right {
+          margin-left: 37px; }
+      .main .content .download_list .help_box.help2 {
+        padding-top: 104px; }
+        .main .content .download_list .help_box.help2 .right {
+          margin-left: 57px; }
+        .main .content .download_list .help_box.help2 .bottom {
+          margin-top: 44px; }
+      .main .content .download_list .help_box.help3 {
+        padding-top: 160px; }
+        .main .content .download_list .help_box.help3 ul {
+          display: inline-block; }
+          .main .content .download_list .help_box.help3 ul:nth-of-type(1) {
+            margin-right: 38px; }
+          .main .content .download_list .help_box.help3 ul li {
+            margin-bottom: 47px; }
+            .main .content .download_list .help_box.help3 ul li .pics, .main .content .download_list .help_box.help3 ul li .text {
+              display: inline-block;
+              vertical-align: top; }
+            .main .content .download_list .help_box.help3 ul li .text {
+              width: 375px;
+              line-height: 1.5;
+              letter-spacing: 1.4px;
+              text-align: left;
+              margin-left: 16px; }
+    .main .content .download_list .btn_download {
+      width: 133px;
+      height: 49px;
+      line-height: 49px;
+      border-radius: 50px;
+      font-size: 1.125rem;
+      border: 1px solid #b6bdb9;
+      color: #6d6464;
+      background-color: #fff; }
+      .main .content .download_list .btn_download:hover, .main .content .download_list .btn_download:focus, .main .content .download_list .btn_download:active {
+        color: #6d6464; }

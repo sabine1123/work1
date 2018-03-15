@@ -1,0 +1,367 @@
+extends ./layout/head.pug
+append page_head
+  link(rel="stylesheet" href="./css/download.css")
+
+block body
+  body
+    .wrapper
+      include ./layout/full_header.pug
+
+      .main
+        section.full_banner
+          img(src="./imgs/download/banner/download_banner_01.jpg" alt="")
+
+
+        section.content
+          .download_menu
+            .box
+              .menu.c_tab(role="tabpanel")
+
+                ul(class="nav nav-tabs" role="tablist")
+                  li(role="presentation" class="active")
+                    a(href="#duole" aria-controls="duole" role="tab" data-toggle="tab") 多乐客户端
+                  li(role="presentation")
+                    a(href="#PT" aria-controls="PT" role="tab" data-toggle="tab") PT
+
+                  li(role="presentation")
+                    a(href="#MG" aria-controls="MG" role="tab" data-toggle="tab") MG
+
+                  li(role="presentation")
+                    a(href="#AG" aria-controls="AG" role="tab" data-toggle="tab") AG
+
+                  li(role="presentation")
+                    a(href="#BBIN" aria-controls="BBIN" role="tab" data-toggle="tab") BBIN
+
+                  li(role="presentation")
+                    a(href="#DT" aria-controls="DT" role="tab" data-toggle="tab") DT
+
+                  li.pull-right.icon_a.no_hover
+                    a(href="javascript:;")
+                      img(src="./imgs/download/icons/download_DNS_icon.png") 
+                      |DNS防劫持教程
+
+                  li.pull-right.icon_a(role="presentation")
+                    a(href="#gobrowser" aria-controls="gobrowser" role="tab" data-toggle="tab") 
+                      img(src="./imgs/download/icons/download_browser_icon.png") 
+                      |浏览器推荐
+
+
+                  .clearfix
+          //- .download_wrap
+          .box
+            .download_list
+              .tab-content
+                div(role="tabpanel" class="tab-pane active" id="duole")
+                  .download_box.duole
+                    .top.bg_green
+                      img(src="./imgs/download/duole_Android_img.png")
+                    .bottom
+                      p
+                        span.s_f_color 手机浏览器
+                        |扫描二维码
+
+                      img.qr(src="./imgs/download/duole_Android_QRcord.png")
+                      p.s_f_size.w_f_color.help
+                        a(href="#android_help" aria-controls="android_help" role="tab" data-toggle="tab") 使用帮助?
+                      p.mr_t_b 如二维码扫描不成功，请选择
+                      .btn.btn_download 
+                        a(href="javascript:;") 直接下载
+
+                  .download_box.duole
+                    .top.bg_yellow
+                      img(src="./imgs/download/duole_IOS_img.png")
+                    .bottom
+                      p
+                        span.s_f_color 手机浏览器
+                        |扫描二维码
+
+                      img.qr(src="./imgs/download/duole_IOS_QRcord.png")
+                      p.s_f_size.w_f_color.help
+                        a(href="#ios_help" aria-controls="ios_help" role="tab" data-toggle="tab") 使用帮助?
+                      p.mr_t_b 如二维码扫描不成功，请选择
+                      .btn.btn_download 
+                        a(href="javascript:;") 直接下载
+
+                  .download_box.duole
+                    .top.bg_violet
+                      img(src="./imgs/download/duolePC_img.png")
+                    .bottom
+
+                      p.no_qr_text 绿色、安全、无毒
+                        br/ 自动获取安全登录线路
+
+                      p.s_f_size.w_f_color.mr_t.help
+                        a(href="#duole_help" aria-controls="duole_help" role="tab" data-toggle="tab") 使用帮助?
+
+                      .btn.btn_download.mr_t_btn 
+                        a(href="javascript:;") 马上下载
+
+
+
+                div(role="tabpanel" class="tab-pane" id="PT")
+                  .download_box
+                    .top.bg_green
+                      img(src="./imgs/download/PT_slot_Android_img.png")
+                    .bottom
+                      p
+                        span.s_f_color 手机浏览器
+                        |扫描二维码
+                      img.qr(src="./imgs/download/PT_slot_Android_QRCord.jpg")
+                      p.mr_t_b 或
+                      .btn.btn_download 
+                        a(href="javascript:;") 直接下载
+
+                  .download_box
+                    .top.bg_pink
+                      img(src="./imgs/download/PT_Android_img.png")
+                    .bottom
+                      p
+                        span.s_f_color 手机浏览器
+                        |扫描二维码
+                      img.qr(src="./imgs/download/PT_Android_QRCord.jpg")
+                      p.mr_t_b 或
+                      .btn.btn_download 
+                        a(href="javascript:;") 直接下载
+
+                  .download_box
+                    .top.bg_violet
+                      img(src="./imgs/download/PT_PC_img.png")
+                    .bottom
+                      p.no_qr_text 一键进入游戏
+                        br/ 方便、快捷
+                      .btn.btn_download.mr_t_btn 
+                        a(href="javascript:;") 马上下载
+
+
+
+                div(role="tabpanel" class="tab-pane" id="MG")
+                  .download_box
+                    .top.bg_green
+                      img(src="./imgs/download/MG_Android_img.png")
+                    .bottom
+                      p
+                        span.s_f_color 手机浏览器
+                        |扫描二维码
+                      img.qr(src="./imgs/download/MG_Android_QRcord.jpg")
+                      p.mr_t_b 或
+                      .btn.btn_download 
+                        a(href="javascript:;") 直接下载
+
+                  .download_box
+                    .top.bg_violet
+                      img(src="./imgs/download/MG_PC_img.png")
+                    .bottom
+                      p.no_qr_text 一键进入游戏
+                        br/ 方便、快捷
+                      .btn.btn_download.mr_t_btn 
+                        a(href="javascript:;") 直接下载
+
+
+
+                div(role="tabpanel" class="tab-pane" id="AG")
+                  .download_box
+                    .top.bg_green
+                      img(src="./imgs/download/AG_Android_img.png")
+                    .bottom
+                      p
+                        span.s_f_color 手机浏览器
+                        |扫描二维码
+                      img.qr(src="./imgs/download/AG_Android_QRcord.jpg")
+                      p.mr_t_b 或
+                      .btn.btn_download 
+                        a(href="javascript:;") 直接下载
+
+                  .download_box
+                    .top.bg_yellow
+                      img(src="./imgs/download/AG_IOS_img.png")
+                    .bottom
+                      p
+                        span.s_f_color 手机浏览器
+                        |扫描二维码
+                      img.qr(src="./imgs/download/AG_IOS_QRcord.jpg")
+                      p.mr_t_b 或
+                      .btn.btn_download 
+                        a(href="javascript:;") 马上下载
+
+                  .download_box
+                    .top.bg_violet
+                      img(src="./imgs/download/AG_PC_img.png")
+                    .bottom
+                      p.no_qr_text 一键进入游戏
+                        br/ 方便、快捷
+                      .btn.btn_download.mr_t_btn 
+                        a(href="javascript:;") 马上下载
+
+
+
+                div(role="tabpanel" class="tab-pane" id="BBIN")
+                  .download_box
+                    .top.bg_green
+                      img(src="./imgs/download/BBIN_Android_img.png")
+                    .bottom
+                      p
+                        span.s_f_color 手机浏览器
+                        |扫描二维码
+                      img.qr(src="./imgs/download/BBIN_Android_QRCord.jpg.jpg")
+                      p.mr_t_b 或
+                      .btn.btn_download 
+                        a(href="javascript:;") 直接下载
+
+                  .download_box
+                    .top.bg_yellow
+                      img(src="./imgs/download/BBIN_IOS_img.png")
+                    .bottom
+                      p
+                        span.s_f_color 手机浏览器
+                        |扫描二维码
+                      img.qr(src="./imgs/download/BBIN_IOS_QRCord.jpg")
+                      p.mr_t_b 或
+                      .btn.btn_download 
+                        a(href="javascript:;") 直接下载
+
+
+
+                div(role="tabpanel" class="tab-pane" id="DT")
+                  .download_box
+                    .top.bg_green
+                      img(src="./imgs/download/DT_Android_img.png")
+                    .bottom
+                      p
+                        span.s_f_color 手机浏览器
+                        |扫描二维码
+                      img.qr(src="./imgs/download/DT_Android_QRcord.jpg")
+                      p.mr_t_b 或
+                      .btn.btn_download 
+                        a(href="javascript:;") 直接下载
+
+                  .download_box
+                    .top.bg_yellow
+                      img(src="./imgs/download/DT_IOS_img.png")
+                    .bottom
+                      p
+                        span.s_f_color 手机浏览器
+                        |扫描二维码
+                      img.qr(src="./imgs/download/DT_IOS_QRcord.jpg")
+                      p.mr_t_b 或
+                      .btn.btn_download 
+                        a(href="javascript:;") 直接下载
+
+
+
+                div(role="tabpanel" class="tab-pane" id="gobrowser")
+                  .download_box.browser
+                    .top.bg_green
+                      img(src="./imgs/download/Chrome_icon.png")
+                    .bottom
+                      .title 谷歌浏览器
+                      .sub_title Google
+                      .btn.btn_download 
+                        a(href="javascript:;") 前去下载
+
+                  .download_box.browser
+                    .top.bg_yellow
+                      img(src="./imgs/download/Firefox_icon.png")
+                    .bottom
+                      .title 火狐浏览器
+                      .sub_title Firefox
+                      .btn.btn_download 
+                        a(href="javascript:;") 前去下载
+
+                  .download_box.browser
+                    .top.bg_sky
+                      img(src="./imgs/download/IE_icon.png")
+                    .bottom
+                      .title FLASH播放器
+                      .sub_title Flash Player
+                      .btn.btn_download 
+                        a(href="javascript:;") 前去下载
+
+                div(role="tabpanel" class="tab-pane" id="android_help")
+                  .help_box.help1
+                    img.close_help(src="./imgs/download/btn/pop_close_btn.png")
+                    .left
+                      img(src="./imgs/download/duole_Android_QRcord.png")
+                      .btn.btn_download 
+                        a(href="javascript:;") 直接下载
+                    .right
+                      p.text ① 手机扫描二维码，进入APP下载页面，点击下载
+                        br/ ② APP安装和授权
+                        br/ ③ 打开APP，再次扫描左侧二维码进入游戏
+
+                      p.text 
+                        span.s 注意：
+                        br/ 如无法使用扫描二维码安装，
+                        br/ 请使用手机浏览器打开此页面，直接下载安装文件至手
+                        br/ 机安装或点击左侧“直接下载”按钮下载至电脑，连接
+                        br/ 手机数据线进行转移并安装。
+
+
+                    .bottom
+                div(role="tabpanel" class="tab-pane" id="ios_help")
+                  .help_box.help2
+                    img.close_help(src="./imgs/download/btn/pop_close_btn.png")
+                    .left
+                      img(src="./imgs/download/pop_IOS_QRCord.jpg")
+                      .btn.btn_download 
+                        a(href="javascript:;") 直接下载
+                    .right
+                      p.text ① 手机扫描二维码，进入APP下载页面，点击下载
+                        br/ ② APP安装和授权
+                        span.g (请参看下方IOS版授权教程)
+                        br/ ③ 打开APP，再次扫描左侧二维码进入游戏
+
+                      p.text 
+                        span.s 注意：
+                        br/ 如无法使用扫描二维码安装，
+                        br/ 请使用手机浏览器打开此页面，直接下载安装文件至手
+                        br/ 机安装或点击左侧“直接下载”按钮下载至电脑，连接
+                        br/ 手机数据线进行转移并安装。
+
+                    .bottom
+                      img(src="./imgs/download/pop_IOS_settings.jpg")
+                div(role="tabpanel" class="tab-pane" id="duole_help")
+                  .help_box.help3
+                    img.close_help(src="./imgs/download/btn/pop_close_btn.png")
+                    ul
+                      li
+                        img.pics(src="./imgs/download/pop_img_01.jpg")
+                        p.text 1. 完成载后解压文件，选中exe文件右键点击选择【属性】，在【兼容性】标签中选中「使用管理身份运行」，点击【应用】；如果运行登录后系统提示【安全警告】，请取消选中“打开此文件前总是询问”选项后，点击【运行】。
+
+                      li
+                        img.pics(src="./imgs/download/pop_img_02.jpg")
+                        p.text 2. 或每次运行多乐登录器时，请先点击右键选择【以管理员身份运行】；
+
+                    ul
+                      li
+                        img.pics(src="./imgs/download/pop_img_03.jpg")
+                        p.text 3、运行客户应用程序后，点击访问【访问主站】或【备用网站】按钮时，如果360杀毒软件提示报毒或发现木马时，请选择【添加信任】；
+
+                      li
+                        img.pics(src="./imgs/download/pop_img_04.jpg")
+                        p.text 4、如果对于360等杀毒软件提示「有程度试图修改HOST文件」请务必选择【不再提醒】后【允许程序所有操作】。
+
+
+      include ./layout/footer.pug
+
+
+      include ./layout/fix_service.pug
+
+
+
+
+
+    include ./layout/common_scripts.pug
+
+    script.
+      $(document).ready(function(){
+        baseCtrl();
+
+        $('.close_help').on('click',function(){
+          $('#android_help,#ios_help, #duole_help').removeClass('active');
+          $('#duole').addClass('active');
+        });
+        //add menu active
+        //- $('#tMenu>li:nth-child(7)').addClass('active');
+
+      });//end of document ready
+

@@ -1,0 +1,100 @@
+@import 'layout/_includes.sass'
+
+.c_tab
+  +tab(#000,#f1f6f2,16px 30px)
+
+// .p_tab
+//   +tab(#73b822,#f1f6f2,10px 15px 5px)
+
+.main
+
+  .content
+    background: url(../imgs/event/event_bg.jpg)  #e7eee9 no-repeat
+    background-size: contain
+    padding-bottom: 70px
+    min-height: 829px
+    .event_menu
+      background-color: #fff
+      .menu
+        color: #5a5c59
+        font-size: $font_size_large
+        letter-spacing: 1px
+        background-color: #fff
+        font-weight: bold
+
+    .event_list
+      .event_box
+        // background-color: #fcc
+        li
+          vertical-align: top
+          margin-right: 20px
+          margin-top: 28px
+          display: inline-block
+          &:nth-child(even)
+            margin-right: 0px
+
+          &.upcoming
+            .info
+              .sub_title
+                color: #17b7f2
+          &.running  
+            .info
+              .sub_title
+                color: #ff9c01
+          &.finished
+            .event_img 
+              filter: grayscale(1)
+            .info
+              .sub_title
+                color: #181a18
+
+        .event
+          background-color: #fff
+          padding: 10px
+          .event_img, .info
+            display: inline-block
+            vertical-align: top
+
+          .event_img
+            width: 239px
+
+          .info
+            width: 325px
+            padding: 37px 15px 0 25px
+            
+            .head
+              font-size: $font_size_large
+              text-align: left
+              letter-spacing: 1px
+              .title
+                color: #181a18
+
+            .middle
+              color: #79817c
+              font-size: $font_size_base
+              letter-spacing: 0.8px
+              line-height: 2.07
+              margin: 30px 0 0
+
+            .bottom
+              color: #79817c
+              font-size: $font_size_s
+              margin-top: 30px
+
+              .time, .icon
+                display: inline-block
+
+              .icon
+                cursor: pointer
+
+
+
+
+
+
+
+
+
+
+
+
