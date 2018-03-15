@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./lib/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./lib/Swiper-master/css/swiper.css">
+    <link rel="stylesheet" href="./css/common.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="./css/popup.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="./css/vip.css">
+    <script src="./lib/jquery/jquery-3.2.1.min.js"></script>
+    <title>work1</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="full_header">
+        <div class="mem_bar">
+          <div class="box">
+            <div class="pull-left left"><span>GMT+08:00 2017-10-09 18:42:39</span></div>
+            <div class="pull-right right">
+              <div class="off_login">
+                <div class="form"><span class="title">账号</span>
+                  <input class="input_middle input_fill_dark" type="text">
+                </div>
+                <div class="form"><span class="title">密码</span>
+                  <input class="input_middle input_fill_dark" type="password">
+                </div>
+                <div class="btn btn_fill_green btn_small"> <a href="javascript:;">登录</a></div><a class="forget" href="javascript:;">忘记密码？</a>
+                <div class="btn btn_fill_gray btn_small"><a href="javascript:;">注册</a></div>
+              </div>
+              <div class="on_login"><span class="greetings">您好，<span class="font_yellow">flashtest</span></span>
+                <div class="balance" id="tbal">
+                  <div class="num">¥300<span class="font_sub">.22</span></div>
+                  <div class="reload"><img src="./imgs/common/icons/hd_reload_icon.png" alt=""></div>
+                </div>
+                <div class="switch on">
+                  <div class="toggle"></div>
+                </div>
+                <div class="member">
+                  <ul>
+                    <li> <a href="./member_deposit.html">充值</a></li>
+                    <li> <a href="./member_trnsfer.html">转帐</a></li>
+                    <li><a href="./member_withdraw.html">取款</a></li>
+                    <li><a href="./member_deposit.html">个人中心</a></li>
+                    <li>
+                      <div class="btn btn_fill_gray btn_small"> <a href="javascript:;">登出</a></div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+        <nav>
+          <div class="box">
+            <div class="pull-left left"><a href="javascript:;"><img src="./imgs/common/logo_t.png" alt=""></a></div>
+            <div class="pull-left right">
+              <ul class="menu" id="tMenu">
+                <li><a href="./index.html"><img src="./imgs/common/icons/home_icon.png" alt=""><span class="title">首页</span></a></li>
+                <li><a href="./slot.html"><img src="./imgs/common/icons/slot_icon.png" alt=""><span class="title">老虎机</span></a></li>
+                <li><a href="./live.html"><img src="./imgs/common/icons/menu_live_icon.png" alt=""><span class="title">真人</span></a></li>
+                <li><a href="./sports.html"><img src="./imgs/common/icons/menu_sport_icon.png" alt=""><span class="title">体育</span></a></li>
+                <li><a href="javascript:;"><img src="./imgs/common/icons/menu_lotto_icon.png" alt=""><span class="title">彩票</span></a></li>
+                <li><a href="./fishing.html"><img src="./imgs/common/icons/menu_fishing_icon.png" alt=""><span class="title">补鱼</span></a></li>
+                <li><a href="./promotions.html"><img src="./imgs/common/icons/menu_event_icon.png" alt=""><span class="title">优惠</span></a></li>
+                <li><a href="./vip.html"><img src="./imgs/common/icons/menu_club_icon.png" alt=""><span class="title">俱乐部</span></a></li>
+              </ul>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+        </nav>
+      </header>
+      <div class="main">
+        <div class="wrap"><img class="dec" src="imgs/VIP/vip_sideber_img.png" alt="">
+          <div class="content">
+            <div class="vip_tab" role="tabpanel">
+              <ul class="nav nav-tabs" role="tablist">
+                <li class="tab_rules active" role="presentation"><a href="#rules" aria-controls="rules" role="tab" data-toggle="tab"> </a></li>
+                <li class="tab_grades" role="presentation"><a href="#grades" aria-controls="grades" role="tab" data-toggle="tab"> </a></li>
+              </ul>
+            </div>
+            <div class="vip_content tab-content">
+              <div class="tab-pane active" role="tabpanel" id="rules"> 
+                <table class="vip_table rules">
+                  <thead>
+                    <tr>
+                      <td>会员等级</td>
+                      <td>申请VIP条件</td>
+                      <td>VIP保级条件</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>忠实会员</td>
+                      <td>无</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>白银VIP</td>
+                      <td>
+                        <ul>
+                          <li> <span class="c">A：</span><span>累积投注额</span><span class="s">≥20万</span></li>
+                          <li> <span class="c">B：</span><span>月存款</span><span class="s">≥5万</span></li>
+                          <li> <span class="c">C：</span><span>单笔存款</span><span class="s">≥3000</span></li>
+                        </ul>
+                      </td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>黄金VIP</td>
+                      <td>
+                        <ul>
+                          <li> <span class="c">A：</span><span>累积投注额</span><span class="s">≥50万</span></li>
+                          <li> <span class="c">B：</span><span>月存款</span><span class="s">≥10万</span></li>
+                          <li> <span class="c">C：</span><span>单笔存款</span><span class="s">≥8000</span></li>
+                        </ul>
+                      </td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>铂金VIP</td>
+                      <td>
+                        <ul>
+                          <li> <span class="c">A：</span><span>累积投注额</span><span class="s">≥100万</span></li>
+                          <li> <span class="c">B：</span><span>月存款</span><span class="s">≥20万</span></li>
+                          <li> <span class="c">C：</span><span>单笔存款</span><span class="s">≥15000</span></li>
+                        </ul>
+                      </td>
+                      <td>每月保底存款2万</td>
+                    </tr>
+                    <tr>
+                      <td>钻石VIP</td>
+                      <td>
+                        <ul>
+                          <li> <span class="c">A：</span><span>累积投注额</span><span class="s">≥300万</span></li>
+                          <li> <span class="c">B：</span><span>月存款</span><span class="s">≥50万</span></li>
+                          <li> <span class="c">C：</span><span>单笔存款</span><span class="s">≥30000</span></li>
+                        </ul>
+                      </td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>至尊VIP</td>
+                      <td>
+                        <ul>
+                          <li> <span class="c">A：</span><span>累积投注额</span><span class="s">≥1000万</span></li>
+                          <li> <span class="c">B：</span><span>月存款</span><span class="s">≥100万</span></li>
+                          <li> <span class="c">C：</span><span>单笔存款</span><span class="s">≥8000</span></li>
+                        </ul>
+                      </td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="tips">
+                  <p class="title">温馨提示：</p>
+                  <ul>
+                    <li>1. 晋升条件须满足A、B、C三项.中的任意两项，有效投注周期为30天(申请优惠产生的所有投注额不计算在内，除返水及救援金外)；<br/>(例如：会员于11月1日注册并首存，11月20日总投注额达到20万或存款累计超过5万元，或在这期间有过单笔3000RMB以上的存款记录，则该会员在11月21日即可申请白银VIP，审核通过后会在12月1日荣升为白银VIP玩家)</li>
+                    <li>2. 晋升为VIP后第二个月，如未满足投注额要求系统自动降级；<br/>(例如：会员在11月21日晋升VIP，则会在11月30日进行审核，投注额不够，将自动降级.)</li>
+                    <li>3.VIP会员升级/降级制度，须逐级申请，降级同样，不可跨级升级VIP亦不会跨级降级 VIP。</li>
+                    <li>4.达到晋级要求后，需连续在线客服进行VIP等级调整。</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="tab-pane" role="tabpanel" id="grades">
+                <table class="vip_table grades">
+                  <thead>
+                    <tr>
+                      <td rowspan="2">会员等级</td>
+                      <td rowspan="2">乐币<br/>倍数</td>
+                      <td rowspan="2">乐币<br/>换现金</td>
+                      <td rowspan="2">晋级<br/>礼金</td>
+                      <td rowspan="2">每月<br/>免费筹码</td>
+                      <td colspan="3">存送优惠(每周1次，仅限老虎机)</td>
+                      <td colspan="4">返水</td>
+                    </tr>
+                    <tr>
+                      <td>存送比例</td>
+                      <td>最高上限</td>
+                      <td>流水要求</td>
+                      <td>真人</td>
+                      <td>电游</td>
+                      <td>体育</td>
+                      <td>彩票</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>忠实会员</td>
+                      <td>1</td>
+                      <td rowspan="6">10乐币<br/>= <br/>1元</td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td>0.6%</td>
+                      <td>0.6%</td>
+                      <td>0.4%</td>
+                      <td rowspan="6">0.4%</td>
+                    </tr>
+                    <tr>
+                      <td>白银VIP</td>
+                      <td>1.1</td>
+                      <td>88</td>
+                      <td>188</td>
+                      <td>60%</td>
+                      <td>388</td>
+                      <td>15</td>
+                      <td>0.8%</td>
+                      <td>0.8%</td>
+                      <td>0.6%</td>
+                    </tr>
+                    <tr>
+                      <td>黄金VIP</td>
+                      <td>1.3</td>
+                      <td>168</td>
+                      <td>288</td>
+                      <td>80%</td>
+                      <td>588</td>
+                      <td>15</td>
+                      <td>0.9%</td>
+                      <td>1.0%</td>
+                      <td>0.7%</td>
+                    </tr>
+                    <tr>
+                      <td>铂金VIP</td>
+                      <td>1.5</td>
+                      <td>288</td>
+                      <td>388</td>
+                      <td>100%</td>
+                      <td>888</td>
+                      <td>18</td>
+                      <td>1.0%</td>
+                      <td>1.2%</td>
+                      <td>0.8%</td>
+                    </tr>
+                    <tr>
+                      <td>钻石VIP</td>
+                      <td>1.7</td>
+                      <td>388</td>
+                      <td>588</td>
+                      <td>100%</td>
+                      <td>1888</td>
+                      <td>20</td>
+                      <td>1.2%</td>
+                      <td>1.4%</td>
+                      <td>0.9%</td>
+                    </tr>
+                    <tr>
+                      <td>至尊VIP</td>
+                      <td>2</td>
+                      <td>588</td>
+                      <td>888</td>
+                      <td>100%</td>
+                      <td>3888</td>
+                      <td>25</td>
+                      <td>12.%</td>
+                      <td>15.%</td>
+                      <td>1.0%</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="tips">
+                  <p class="title">温馨提示：</p>
+                  <ul>
+                    <li>1. 晋级礼金8倍流水投注即可取款，每个VIP级别晋升礼金只可申请一次,VIP等级每月只可晋升一次。</li>
+                    <li>2.VIP免费筹码将会在晋升VIP成功后(首次晋升为VIP的会员)，次日派发。每月5号17:00统一派发相应VIP等级的免费筹码，完成8倍流水即可提款！(达到VIP投注要求，则每月都可申请免费筹码)。</li>
+                    <li>3. 乐币：每天17:00结算前一天的乐币额。 计算公式：当天投注流水/(500/当前等级乐币倍数)，例如：<br/>白银VIP：100000/(500/1.1)= 220乐币<br/>至尊VIP：100000/(500 / 2)= 400乐币</li>
+                    <li>4. 返水优惠在晋级成为VIP后即时生效，存款优惠在晋级成为VIP会员后次月即可申请，取款投注额要求=(本金+红利)*相应倍数。</li>
+                    <li>5. 会员资格是不可转让给他人，本计划只适用于个人进行投注，任何团体/组织予非娱乐性目的进行不正常投注者，保留所有权利没收所得盈利，并于不通知的情况下任何时候终止所得优惠，冻结该会员账号,不得异议！</li>
+                    <li>6. 所有享受VIP优惠的会员，需遵守多乐娱乐城用户协议的相关条款！</li>
+                    <li>7. 多乐娱乐城保留修改、订正和最终解释权！</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="box container-fluid">
+          <div class="row">
+            <div class="col-md-4 col-lg-4">
+              <div class="row">
+                <div class="left">
+                  <div class="sub_wrap">
+                    <div class="title"><img src="imgs/common/footer_Service_img.jpg" alt=""></div>
+                    <div class="content sec">
+                      <div class="title">
+                        <div class="pull-left text">
+                          <h4>存款到账</h4><span class="sub_title">平均时间</span>
+                        </div>
+                        <div class="pull-right time"><span class="num">24</span><span class="unit">秒</span></div>
+                        <div class="clearfix"></div>
+                      </div>
+                      <div class="con">
+                        <div class="bar"></div>
+                      </div>
+                    </div>
+                    <div class="content min">
+                      <div class="title">
+                        <div class="pull-left text">
+                          <h4>取款到账</h4><span class="sub_title">平均时间</span>
+                        </div>
+                        <div class="pull-right time"><span class="num">2'15</span><span class="unit">分</span></div>
+                        <div class="clearfix"></div>
+                      </div>
+                      <div class="con">
+                        <div class="bar"></div>
+                      </div>
+                    </div>
+                    <div class="content place">
+                      <div class="pull-left text">
+                        <h4>便捷的银行服务					</h4><img src="imgs/common/footer_bank_img.jpg" alt=""><span class="sub_title">目前支持的支付机构</span>
+                      </div>
+                      <div class="pull-right time"><span class="num">40</span><span class="unit">家</span></div>
+                      <div class="clearfix"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-lg-4">
+              <div class="row">
+                <div class="middle">
+                  <div class="title"><img src="imgs/common/footer_partners_img.jpg" alt=""></div>
+                  <ul class="partners">
+                    <li><img src="imgs/common/footer_PT_img.jpg" alt=""></li>
+                    <li><img src="imgs/common/footer_MG_img.jpg" alt=""></li>
+                    <li><img src="imgs/common/footer_TOP_img.jpg" alt=""></li>
+                    <li><img src="imgs/common/footer_PlayGO_img.jpg" alt=""></li>
+                    <li><img src="imgs/common/footer_GamesOS_img.jpg" alt=""></li>
+                  </ul>
+                  <ul class="partners">
+                    <li><img src="imgs/common/footer_AG_img.jpg" alt=""></li>
+                    <li><img src="imgs/common/footer_BBIN_img.jpg" alt=""></li>
+                    <li><img src="imgs/common/footer_BET_img.jpg" alt=""></li>
+                    <li><img src="imgs/common/footer_NYX_img.jpg" alt=""></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-lg-4">
+              <div class="row">
+                <div class="right">
+                  <div class="title"><img src="imgs/common/footer_help_img.jpg" alt=""></div>
+                  <div class="footer_menu">
+                    <div class="content">
+                      <ul>
+                        <li><a href="javascript:;"><img src="imgs/index/icons/index_next_icon.jpg" alt="">代理加盟</a></li>
+                        <li><a href="javascript:;"><img src="imgs/index/icons/index_next_icon.jpg" alt="">常见问题 </a></li>
+                        <li><a href="javascript:;"><img src="imgs/index/icons/index_next_icon.jpg" alt="">联系我们</a></li>
+                      </ul>
+                      <ul>
+                        <li><a href="javascript:;"><img src="imgs/index/icons/index_next_icon.jpg" alt="">隐私策略</a></li>
+                        <li><a href="javascript:;"><img src="imgs/index/icons/index_next_icon.jpg" alt="">责任条款</a></li>
+                        <li><a href="javascript:;"><img src="imgs/index/icons/index_next_icon.jpg" alt="">服务条款</a></li>
+                      </ul>
+                    </div>
+                    <div class="content">乐娱乐城持有菲律宾政府PAGCOR博彩牌照且受其监管</div>
+                    <div class="content"><span>电话: 0063-906-2667-666 </span><span>QQ: 9257868</span></div>
+                    <div class="content"><span>Copyright © 2016 多乐娱乐国际控股</span><span>更多精彩 尽在多乐娱乐城</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="fix_service">
+        <ul>
+          <li><a href="javascript:;"><img src="imgs/common/icons/aside_service_icon.png" alt=""><span>在线客服</span></a></li>
+          <li><a href="javascript:;"><img src="imgs/common/icons/weChat_icon.png" alt=""><span>微信扫码</span></a></li>
+          <li><a href="javascript:;"><img src="imgs/common/icons/aside_club_icon.png" alt=""><span>俱乐部</span></a></li>
+          <li><a href="javascript:;"><img src="imgs/common/icons/aside_down_icon.png" alt=""><span>下载中心</span></a></li>
+          <li><a href="javascript:;"><img src="imgs/common/icons/aside_problem_icon.png" alt=""><span>常见问题</span></a></li>
+          <li class="top" id="gotop"><img src="imgs/common/icons/top_icon.png" alt=""></li>
+        </ul>
+      </div>
+    </div>
+    <script src="./lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="./lib/Swiper-master/js/swiper.min.js"></script>
+    <script src="./lib/jquery.blockUI.js"></script>
+    <script src="./js/base.js"></script>
+    <script src="./js/object.js"></script>
+    <script src="./lib/jquery.marquee.js"></script>
+    <script>
+      $(document).ready(function(){
+        baseCtrl();
+      
+        //add menu active
+        $('#tMenu>li:nth-child(8)').addClass('active');
+      
+      
+      
+      
+      });//end of document ready
+    </script>
+  </body>
+</html>
